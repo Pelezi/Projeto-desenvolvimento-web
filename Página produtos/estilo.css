@@ -11,7 +11,7 @@ h3 {
 }
 
 body {
-    background-color: indigo;
+    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
     color: white;
     background-size: 100%;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 .página{
-    background-color: white;
+    background-color: rgb(248, 249, 250);
     margin-left: 5%;
     margin-right: 5%;
 }
