@@ -12,7 +12,15 @@ h3 {
 
 body {
     color: white;
-        background: url("Images/f0mpjw4ddzv41.png");
-        background-size: 100%;
+    background: url("Images/f0mpjw4ddzv41.png");
+    background-size: 100%;
+}
+
+.textopreto{
+    color: black;
+}
+
+.textobranco{
+    color: white;
 }
 
