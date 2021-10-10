@@ -1,7 +1,7 @@
 *{
-    padding: 0px;   
+    padding: 0%;   
     display: flexbox;
-
+    
 
 }
 
@@ -13,6 +13,7 @@
         width: 30;
         flex-wrap: wrap;
         justify-content: space-around;
+        background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
         
 }
 
@@ -40,3 +41,25 @@
     margin: 30px 0;
     border-radius: 30px;
 }
+
+
+#MV{
+    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    
+}
+
+
+#MV h1{
+    text-justify:auto;
+    text-align: center;
+    
+}
+
+.card {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
