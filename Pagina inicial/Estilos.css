@@ -5,6 +5,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 .row {
         display: flex;
