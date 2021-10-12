@@ -66,4 +66,25 @@ html{
     
 }
 
+#Novidades{
+    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+}
 
+#Novidades h1{
+    text-align: center;
+}
+
+#Blog{
+    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    padding: 0%;
+    margin: 0;
+}
+
+.mb-3{
+    display: inline-flex;
+    
+}
+
+#Blog h1{
+    text-align: center;
+}
