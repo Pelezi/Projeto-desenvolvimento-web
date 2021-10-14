@@ -4,7 +4,7 @@
 * Alessandro Cardoso da Costa - 202051317043
 * Higor Mateus de Andrade - 202102620708
 * João Vitor da Silva Santana - 202102302455
-* Luan Henrique Alves de Lira
+* Luan Henrique Alves de Lira - 202103670911
 * Nathan Augusto Alves da Silva
 
 ## Finalidade do projeto:
