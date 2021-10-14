@@ -3,7 +3,7 @@
 ## Integrantes do grupo:
 * Alessandro Cardoso da Costa - 202051317043
 * Higor Mateus de Andrade
-* João Vitor da Silva Santana
+* João Vitor da Silva Santana - 202102302455
 * Luan Henrique Alves de Lira
 * Nathan Augusto Alves da Silva
 
