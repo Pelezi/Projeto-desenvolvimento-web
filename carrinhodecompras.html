@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-br">
+        <title>Carrinho | iHortiFruti</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="carrinhodecompras.css">
+        <link href='https://css.gg/shopping-cart.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/de47ddedf3.js" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" href="Images/favicon-16x16.png" type="image/x-icon">
+    </head>
+    <body>
+<!--CABEÇALHO-------------------------------------------------------------------------------------------------------->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(228, 228, 228);">  
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
+                
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                  </li>
+                </ul> 
+                <form class="input-group me-auto">
+                  <input class="form-control me-2" type="search" placeholder="Ex.: Banana, pera, uva..." aria-label="Search">
+                  <button class="btn btn-outline-danger ms-auto me-3" type="submit">Pesquisar</button>
+                </form>
+                <form class="d-flex">
+                  <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
+                  <button class="btn btn-light me-2 text-nowrap" type="button" href="#">
+                    <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
+                    Carrinho
+                  </button>
+                </form>
+              </div>
+            </div>
+        </nav>
+      </header> <br></br>
+<!--DIV GERAL DE CARRINHO COM OS PRODUTOS---------------------------------------------------------------------------->
+      <div class="meuspedidos" >
+        <div class="carrinho">
+            <h2 style="text-align: left;">Carrinho (2)</h2>
+<!--PEDIDO NUMERO 1-------------------------------------------------------------------------------------------------->
+            <div class="pedido1 my-2">
+                <div class="bananaimage">
+                    <input type="checkbox" id="pedido1" name="pedido1">
+                    <label for="pedido1"><img src="Images/2banana-g2b2650cd3_1280N.jpg" alt="" width="100"></label>
+                </div>
+                <div class="produtobanana">
+                    <p>Banana </p>
+                    <h5>R$ 2,50</h5>
+                    <s>R$ 5,00</s>
+                </div>
+                <div class="trashbutton1">
+                    <button type="submit"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="selectquantidade1">
+                    <select class="form-control form-control-sm">
+                        <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
+                      </select>
+                </div>
+            </div>
+<!--PEDIDO NUMERO 2-------------------------------------------------------------------------------------------------->
+            <div class="pedido2 my-2">
+                <div class="abacateimage">
+                    <input type="checkbox" id="pedido2" name="pedido2">
+                    <label for="pedido2"><img src="Images/1AbacateN.png" alt="" width="100"></label>
+                </div>
+                <div class="produtoabacate">
+                    <p>Abacate</p>
+                    <h5>R$ 6,50</h5>
+                    <s>R$ 8,00</s>
+                </div>
+                <div class="trashbutton2">
+                    <button type="submit"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <div class="selectquantidade2">
+                    <select class="form-control form-control-sm">
+                        <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+<!--RESUMO/FINALIZAÇÃO DO PEDIDO------------------------------------------------------------------------------------->
+        <div class="conteiner-fluid resumo">
+            <h2 style="text-align: left;">Resumo do Pedido </h2>
+            <div class="listasresumo">
+                <ul class="esquerda" style="text-align: left;">
+                    <li>Subtotal:</li>
+                    <li>Envio:</li>
+                </ul>
+                <ul class="direita">
+                    <li>R$00,00</li>
+                    <li>R$20,00</li>
+                </ul>
+            </div>
+<!--TOTAL DA COMPRA-------------------------------------------------------------------------------------------------->
+            <div class="totaltotal">
+                <ul class="total">
+                    <li><h2><b>Total:</b></h2></li>
+                </ul> 
+                <ul class="valortotal">
+                    <li><h2><b>R$00,00</b></h2></li>
+                </ul>               
+            </div>
+<!--BOTÃO FINALIZAR COMPRA------------------------------------------------------------------------------------------->
+            <button type="button" class="btnresumo btn-danger btn-lg">Comprar</button>
+        </div>
+      </div>
+<!--INFORMAÇÕES DE PAGAMENTO E PROTEÇÃO AO CONSUMIDOR---------------------------------------------------------------->
+      <div class="conteiner divinformacoes my-4">
+        <div class="formasdepagamento">
+            <p><b>Formas de pagamento</b></p>
+            <ul>
+                <li><img src="Images/3VISAN.png" alt="" width="30px"></li>
+                <li><img src="Images/6mastercardN.png" alt="" width="30px"></li>
+                <li><img src="Images/4americanexpressN.png" alt="" width="30px"></li>
+                <li><img src="Images/5eloN.png" alt="" width="30px"></li>
+            </ul>
+        </div>
+<!--INFORMAÇÕES DE PROTEÇÃO AO CONSUMIDOR---------------------------------------------------------------------------->
+        <div class="protecaoaoconsumidor">
+            <p><i class="fas fa-shield-alt"></i> <b>Proteção ao consumidor</b></p>
+            <p class="reembolso font-weight-light">Recupere o seu reembolso se seu pedido não for entregue ou de acordo com a descrição.</p>
+        </div>
+      </div>
+<!--RODAPÉ----------------------------------------------------------------------------------------------------------->
+      <div class="container-fluid px-0">
+        <footer class="py-3 mb-auto mt-5 bg-light">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produtos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login / Registro</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
+        </footer>
+      </div>
+    </body>
+</html>
