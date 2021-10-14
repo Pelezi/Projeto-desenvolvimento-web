@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/imgCAdastro/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="Cadastro.html">
+
+    <title>Hortifruti</title>
+</head>
+
+<body>
+
+    <header> <!--cabeçalho-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="imgCAdastro/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
+                
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Produtos</a>
+                  </li>
+                </ul> 
+                <form class="input-group me-auto">
+                  <input class="form-control me-2" type="search" placeholder="Ex.: Banana, pera, uva..." aria-label="Search">
+                  <button class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</button>
+                </form>
+                <form class="d-flex">
+                  <button class="btn btn-danger me-2 text-nowrap" type="button" href="#"><a href="Cadastro.html" class="button">login / cadastro</a> </button>
+                  <button class="btn btn-light me-2 text-nowrap" type="button" href="Cadastro.html">
+                    <img src="imgCadastro/shopping-cart.png" alt="" width="25px" height="25px">
+                    Carrinho
+                  </button>
+                </form>
+              </div>
+            </div>
+        </nav>
+      </header> <br><br>
+
+
+
+
+
+
+    <nav class="Menu-principal">
+        <div class="item">
+            <input type="checkbox" name="" id="checke1">
+            <label for="checke1">O que nosso HortiFruti vende ?</label>
+            <ul>
+                <li><a href="#">Vendemos Maça , Banana , Abacaxi, Morango</a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <input type="checkbox" name="" id="checke2">
+            <label for="checke2">Como funciona o envio do pedido ?</label>
+            <ul>
+                <li><a href="#">solicitamos um delivery para deixar a encomenda na sua residência </a></li>
+                <li><a href="#">Vaocê pode buscar na nossa loja </a></li>
+            </ul>
+        </div>
+        <div class="item">
+            <input type="checkbox" name="" id="checke3">
+            <label for="checke3">Quais formas de pagamento ?</label>
+            <ul>
+                <li><a href="#">Aceitamos cartão , pix , crediario , debito</a></li>
+                <li><a href="https://www.youtube.com/watch?v=cnCIigjaGkE&ab_channel=SaladeEstudo">sobre</a></li>
+                </ul>
+        </div>
+        <div class="item">
+            <input type="checkbox" name="" id="checke4">
+            <label for="checke4">Tive um problema no pedido , como posso resolver ?</label>
+            <ul>
+                <li><a href="#">Voce mandar 0o numero do cadastro para a gente verifica a sua compra </a></li>
+                <li><a href="">Dependendo do pedido a gente reembolsar</a></li>
+            </ul><br>
+        </div><br><br>
+
+    </nav>
+
+    <img src="Images/sticker.png" height="200px" alt="">
+        </div>
+        <div class="container-fluid px-0">
+        <footer class="py-3 mb-auto mt-5 bg-light">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">PRODUTOS</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login / Registro</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
+        </footer>
+        </div>
+
+
+
+    <style>
+    
+        *{
+        margin: 0;
+        padding: 0;
+
+        }
+
+        body{
+
+            background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+        }
+
+        .button{
+
+            text-decoration:none ;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .Menu-principal{
+
+            width: 830px;/*almentar o tamanho da fonte*/
+            height: auto;
+            font-family: arial;
+            margin: 80px auto;
+        }
+        .item label{
+
+            display: block;
+            padding: 10pt;
+            background-color: #434343;
+            font-size: 20px;
+            cursor: pointer;
+            color: #fff;
+            border-bottom: solid 2px #aaa;
+
+        }
+        .item label:hover {
+
+            background-color: saddlebrown;
+        }
+        .item ul{
+
+            width: 100%;
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;/*aqqui*/
+            transition: all .4s linear;
+        }
+
+        .item input{
+
+            display: none;
+
+
+        }
+
+
+        .item ul li a{
+
+            width: 100%; 
+            height: 70px;
+            padding: 15px; /*centraliza a frase na resposta*/
+            display: block;
+            text-decoration: none;
+            background-color: slategray;
+            color: rgb(255, 255, 255) ;
+            border-bottom: solid 2px ; /*linha de baixo do home*/
+        }
+        
+        .item ul li a:hover{
+
+            background-color: #9cf;
+        }
+
+        .item input:checked ~ ul{
+
+            height: auto;
+            max-height: 200px;
+            transform: all;
+
+
+        }
+
+    </style>
+    
+
+       
+</body>
+</html>
