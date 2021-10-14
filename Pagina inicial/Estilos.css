@@ -87,4 +87,11 @@ html{
 
 #Blog h1{
     text-align: center;
+    padding: 30px;
+}
+
+.Element{
+    display:inline-flex;
+    text-align: center;
+    padding: 100px;
 }
