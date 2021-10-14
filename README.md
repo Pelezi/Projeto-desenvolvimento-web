@@ -10,16 +10,14 @@
 ## Finalidade do projeto:
 Montar um site de E-comerce composto de seis páginas feitas por cada um dos integrantes do grupo, sendo elas a página inicial, a lista de produtos da loja, a página individual de um produto, o carrinho de compras, FAQ e a página de login e cadastro.
 
-## Página inicial - Luan Henrique Alves de Lira
+ ### [Página inicial](index.html) - Luan Henrique Alves de Lira
+
+### [Lista de produtos](produtos.html) - Alessandro Cardoso da Costa
+
+### [Página de produto](pagina_compra.html) - Higor Mateus de Andrade
 
 
-## Página de produtos - Alessandro Cardoso da Costa
+### [Carrinho de compras](carrinhodecompras.html) - Nathan Augusto Alves da Silva
 
 
-## Página de produto individual - Higor Mateus de Andrade
-
-
-## Carrinho de compras - Nathan Augusto Alves da Silva
-
-
-## FAQ e página de login e cadastro - João Vitor da Silva Santana
+### [FAQ](FAQ.html) e [página de login e cadastro](Cadastro.html) - João Vitor da Silva Santana
