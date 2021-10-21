@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="shortcut icon" href="Images/favicon-16x16.png" type="image/x-icon">
     
-    <title>Hortifruti</title>
+    <title>iHortifruti</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <header> <!--cabeçalho-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html" target="_blank">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
                 
               </a>
@@ -25,10 +25,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                  <ul class="navbar-nav me-3 mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Produtos</a>
+                    <a class="nav-link " href="produtos.html">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="FAQ.html">FAQ</a>
                   </li>
                 </ul> 
                 <form class="input-group me-auto">
@@ -36,11 +39,11 @@
                   <button class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</button>
                 </form>
                 <form class="d-flex">
-                  <button class="btn btn-danger me-2 text-nowrap" type="button" href="#"><a href="Cadastro.html" class="button">login / cadastro</a> </button>
-                  <button class="btn btn-light me-2 text-nowrap" type="button" href="Cadastro.html">
-                    <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
-                    Carrinho
-                  </button>
+                    <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
+                    <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
+                        <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
+                        Carrinho
+                    </a>
                 </form>
               </div>
             </div>
@@ -57,7 +60,7 @@
             <input type="checkbox" name="" id="checke1">
             <label for="checke1">O que nosso HortiFruti vende ?</label>
             <ul>
-                <li><a href="#">Vendemos Maça , Banana , Abacaxi, Morango </a></li>
+                <li><a href="#">Vendemos Maçã , Banana , Abacaxi, Morango </a></li>
             </ul>
         </div>
         <div class="item">
@@ -89,10 +92,10 @@
         <div class="container-fluid px-0">
         <footer class="py-3 mb-auto mt-5 bg-light">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">PRODUTOS</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">PRODUTOS</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login / Registro</a></li>
+        <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Registro</a></li>
         </ul>
         <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
         </footer>

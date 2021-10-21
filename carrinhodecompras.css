@@ -1,0 +1,232 @@
+
+h1 {
+    text-align: left;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+}
+
+.meuspedidos{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrinho{
+    width: 700px;
+    height: 310px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 7px;
+    background-color: rgb(248, 249, 250);
+    color: black;
+    font: sans-serif;
+    margin-left: 150px;
+}
+
+.bananaimage{
+    width: 140px;
+    display: table-cell
+}
+
+.produtobanana{
+    display: table-cell;
+    float: left;
+    width: 200px;
+    height: 25px;
+    font: normal 10pt sans-serif;
+}
+
+.produtobanana p{
+    margin-bottom: 40px;
+}
+
+.produtobanana s{
+    color: #dc3545;
+}
+
+.pedido1{
+    width: 684px;
+    display: table;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+
+}
+
+.abacateimage{
+    width: 140px;
+    display: table-cell;
+    border-radius: 30%;
+}
+
+.produtoabacate{
+    display: table-cell;
+    float: left;
+    width: 200px;
+    height: 25px;
+    font: normal 10pt sans-serif;
+}
+
+.produtoabacate p{
+    margin-bottom: 40px;
+}
+
+.produtoabacate s{
+    color: #dc3545;
+}
+
+.pedido2{
+    display: table;
+    width: 684px;
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.trashbutton1 button{
+    float: right;
+    border: none;
+    background-color: transparent;
+    margin-right: 3px;
+}
+
+.trashbutton2 button{
+    float: right;
+    border: none;
+    background-color: transparent;
+    margin-right: 3px;
+}
+
+.selectquantidade1 select{
+    margin-left: 490px;
+    width: 33px;
+    float: right;
+}
+
+.selectquantidade2 select{
+    margin-left: 490px;
+    width: 33px;
+    float: right;
+}
+
+input {
+    margin: .4rem;
+}
+
+img{
+    border-radius: 3px;
+}
+
+.resumo{
+    position: fixed;
+    margin-bottom: 100px;
+    left: 23.3cm;
+    width: 330px;
+    height: 277px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgb(248, 249, 250);
+    color: black;
+    font: sans-serif;
+}
+
+.listasresumo{
+    margin-bottom: 5px;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: white;
+    display: flex;
+}
+
+.listasresumo ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listaresumo ul li{
+    margin-top: 7px;
+} 
+
+.totaltotal{
+    height: 60px;
+    margin-bottom: 23px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: white;
+    justify-content: space-between;
+    display: flex;
+}
+
+.totaltotal ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btnresumo{
+    width: 8.4cm;
+}
+
+.divinformacoes{
+    display: flex;
+    width: 700px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgb(248, 249, 250);
+    color: black;
+    font: sans-serif;
+    margin-left: 150px;
+}
+
+.formasdepagamento{
+    border-right: 1px solid silver;
+    font: sans-serif;
+    margin-top: 5px;
+    width: 50%;
+    text-align: center;
+}
+    
+.formasdepagamento ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px;
+    text-align: -webkit-match-parent;
+}
+
+.protecaoaoconsumidor{
+    font: sans-serif;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    /* background-color: rgb(148, 224, 152); */
+    width: 50%;
+}
+
+.reembolso{
+    font-size: 10pt;
+    color: rgb(80, 80, 80);
+}

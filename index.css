@@ -44,8 +44,9 @@ html{
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
+    text-decoration:none ;
+    color: rgb(255, 255, 255);   
 }
-
 
 #MV{
     background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
