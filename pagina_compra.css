@@ -22,16 +22,26 @@ body {
     margin-bottom: 80px;  
 }
 
+.card_img{
+    width: 150px;
+    height: 112px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.small_img{
+    height: 100%;
+}
 .grid{
    display: grid;
    float: left;
-   grid-gap: 15px;
+   grid-gap: 10px;
    margin-right: 10px;
 }
 
 .imagem{
     display: table-cell;
     float: left;
+    cursor: pointer;
 }
 
 .texto{
@@ -79,4 +89,41 @@ h3{
 .texto1{
     margin-left: 50px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#modal_img{
+   width: 55vw; 
+}
+
+.modal-content{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    visibility: hidden;
+}
+
+.modal_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+
+#bt_close{
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    padding: 1px 10px;
+    font-size: 25px;
+    border:solid 1px #fff ;
+}
+
+.modal_active{
+    visibility: visible;
 }
