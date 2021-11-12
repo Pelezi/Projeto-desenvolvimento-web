@@ -80,13 +80,14 @@
                 </div>
                 <div class="CEP">
                   <span>Consultar prazo e valor do frete:</span>
-                  <div data-stock-type="on_seller">
-                    <input type="text" placeholder="00000-000" name="zipcode" aria-label="cep" > 
-                    <button type="button" class="btn btn-danger">Ok</button> 
-                  </div>
+                  <form id="form1">
+                    <input type="text" placeholder="00000-000" id="cep"> 
+                    <button type="submit" id="btn_cep" class="btn btn-danger">Buscar</button> 
+                  </form>
                   <div> 
                     <a href="https://buscacepinter.correios.com.br/" target="_blank" >Não sei o CEP</a> <p></p>
                   </div> 
+                  <div class="resultado_cep"></div>
                 </div>
               </div>     
             </div>   
@@ -133,6 +134,7 @@
         </footer>
       </div>
 
+      <script src="jQuery.js"></script>
       <script src="pagina_compra.js"></script>
       
     </body>

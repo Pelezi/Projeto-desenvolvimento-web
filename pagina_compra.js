@@ -1,3 +1,23 @@
+$(document).ready(function(){
+    $('#btn_cep').on('click',function(event){
+        event.preventDefault();
+        var Dados=$(this).serialize();
+        var cep=$ ('#cep').val();
+        $.ajax({
+            url: `https://viacep.com.br/ws/${cep}/json/`,
+            method:'get',
+            dataType:'json',
+            data: Dados,
+            success:function(Dados){
+                $ ('.resultado_cep').html('').append(`<div>${Dados.logradouro} , ${Dados.bairro} , ${Dados.localidade} , ${Dados.uf} </div>`)
+            },
+            error:function(Dados) {
+                $ ('.resultado_cep').html('').append('Cep não encontrado. Tente novamento ou click em "Não sei o CEP"');
+            }
+        });
+    });
+});
+
 let imagens= document.querySelectorAll('.small_img');
 let modal = document.querySelector('.modal-content');
 let modalImg = document.querySelector('#modal_img');
@@ -17,3 +37,4 @@ for(let i =0; i<imagens.length;i++){
 btClose.addEventListener('click', function(){
     modal.classList.toggle('modal_active');
 });
+
