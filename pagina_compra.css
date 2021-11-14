@@ -68,6 +68,11 @@ h3{
     float: left;
 }
 
+#btn_cep{
+    margin-left: 10px
+}
+
+
 .valor{
     color: rgb(141, 141, 141);
 }
@@ -150,4 +155,8 @@ h3{
 .modal_active{
     visibility: visible;
     opacity: 1;
+}
+
+.form-control{
+    width: 103px;
 }

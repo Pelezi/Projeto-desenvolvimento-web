@@ -9,7 +9,7 @@ $(document).ready(function(){
             dataType:'json',
             data: Dados,
             success:function(Dados){
-                $ ('.resultado_cep').html('').append(`<div>${Dados.logradouro} , ${Dados.bairro} , ${Dados.localidade} , ${Dados.uf} </div>`)
+                    $ ('.resultado_cep').html('').append(`<div>${Dados.logradouro} , ${Dados.bairro} , ${Dados.localidade} , ${Dados.uf} </div>`)
             },
             error:function(Dados) {
                 $ ('.resultado_cep').html('').append('Cep não encontrado. Tente novamento ou click em "Não sei o CEP"');
@@ -18,7 +18,7 @@ $(document).ready(function(){
     });
 });
 
-let imagens= document.querySelectorAll('.small_img');
+let imagens = document.querySelectorAll('.small_img');
 let modal = document.querySelector('.modal-content');
 let modalImg = document.querySelector('#modal_img');
 let btClose = document.querySelector('#bt_close');
