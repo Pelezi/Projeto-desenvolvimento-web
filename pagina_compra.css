@@ -149,7 +149,7 @@ h3{
 
 }
 #bt_close:hover{
-    background-color: #f00 ;
+    background-color: crimson ;
 }
 
 .modal_active{
@@ -159,4 +159,7 @@ h3{
 
 .form-control{
     width: 103px;
+}
+.container{
+    background-color: #f00;
 }
