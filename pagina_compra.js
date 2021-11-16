@@ -14,7 +14,7 @@ $(document).ready(function(){
                <p></p> <h3>R$ 20,00 </h3>`)
             },
             error:function(Dados) {
-                retorno = $ ('.resultado_cep').html('').append('CEP não encontrado. Tente novamento ou click em "Não sei o CEP"');
+                retorno = $ ('.resultado_cep').html('').append('CEP não encontrado. Tente novamente ou click em "Não sei o CEP"');
             }
         });
     });
