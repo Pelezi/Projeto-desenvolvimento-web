@@ -67,6 +67,10 @@ h3{
     margin-left: 20px;
     float: left;
 }
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
 
 #btn_cep{
     margin-left: 10px

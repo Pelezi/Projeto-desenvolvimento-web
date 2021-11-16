@@ -3,17 +3,18 @@ $(document).ready(function(){
         event.preventDefault();
         var Dados=$(this).serialize();
         var cep=$ ('#cep').val();
+        var retorno;
         $.ajax({
             url: `https://viacep.com.br/ws/${cep}/json/`,
             method:'get',
             dataType:'json',
             data: Dados,
             success:function(Dados){
-                    $ ('.resultado_cep').html('').append(`<div>${Dados.logradouro}, ${Dados.bairro} - ${Dados.localidade} - ${Dados.uf} </div> <p></p> Normal  <p></p> 1 dia útil
-                    <p></p> <h3>R$ 20,00 </h3>`)
+               $ ('.resultado_cep').html('').append(`<div>${Dados.logradouro}, ${Dados.bairro} - ${Dados.localidade} - ${Dados.uf} </div> <p></p> Normal  <p></p> 1 dia útil
+               <p></p> <h3>R$ 20,00 </h3>`)
             },
             error:function(Dados) {
-                $ ('.resultado_cep').html('').append('Cep não encontrado. Tente novamento ou click em "Não sei o CEP"');
+                retorno = $ ('.resultado_cep').html('').append('CEP não encontrado. Tente novamento ou click em "Não sei o CEP"');
             }
         });
     });
