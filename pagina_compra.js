@@ -11,7 +11,7 @@ $(document).ready(function(){
             data: Dados,
             success:function(Dados){
                $ ('.resultado_cep').html('').append(`<div>${Dados.logradouro}, ${Dados.bairro} - ${Dados.localidade} - ${Dados.uf} </div> <p></p> Normal  <p></p> 1 dia útil
-               <p></p> <h3>R$ 20,00 </h3>`)
+               <p></p> <h3>R$ 5,00 </h3>`)
             },
             error:function(Dados) {
                 retorno = $ ('.resultado_cep').html('').append('CEP não encontrado. Tente novamente ou click em "Não sei o CEP"');
