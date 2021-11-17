@@ -11,7 +11,12 @@
     </head>
 
     <body>
-
+      <div class="modal-content" tabindex="-1">
+        <div class="modal_content">
+          <img src="Images/banana1.jpg"  id="modal_img">
+        </div>
+        <span id="bt_close">&times;</span>
+      </div>
       <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -35,7 +40,7 @@
                 </ul> 
                 <form class="input-group me-auto">
                   <input class="form-control me-2" type="search" placeholder="Ex.: Banana, pera, uva..." aria-label="Search">
-                  <button class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</button>
+                  <a class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</a>
                 </form>
                 <form class="d-flex">
                   <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
@@ -48,12 +53,6 @@
             </div>  
         </nav>
       </header>
-     <div class="modal-content">
-        <div class="modal_content">
-          <img src="Images/banana1.jpg"  id="modal_img">
-        </div>
-        <span id="bt_close">&times;</span>
-      </div>
         <section class="venda">
             <div class="conteudo">
               <section class="grid">
@@ -72,22 +71,23 @@
               </div>
               <div class="texto">
                 <h1>Banana</h1>
-                <p>A Banana contém grandes quantidades de açúcares: sacarose, frutose e glicose. Além disso, a fruta é rica em fibras, vitaminas A, B1, B2 e C, cálcio, fósforo e ferroe e pode ser consumida a qualquer momento.</p>
+                <p>A Banana contém grandes quantidades de açúcares: sacarose, frutose e glicose. Além disso, a fruta é rica em fibras, vitaminas A, B1, B2 e C, cálcio, fósforo,ferro e pode ser consumida a qualquer momento.</p>
                 <s>R$ 7,00</s>
-                <h3>R$ 5,00 a palma</h3>
+                <h3>R$ 5,00 à dúzia</h3>
                 <p>ou até <b>5x de R$ 1,00 </b>sem juros</p>
                 <div class="botao">         
-                  <button type="button" class="btn btn-danger btn-lg btn-block">Adicionar ao carrinho</button>
+                  <a type="button" href="carrinhodecompras.html" id="comprar" class="btn btn-danger btn-lg btn-block">Adicionar ao carrinho</a>
                 </div>
-                <div class="CEP">
+                <div class="CEP" >
                   <span>Consultar prazo e valor do frete:</span>
-                  <div data-stock-type="on_seller">
-                    <input type="text" placeholder="00000-000" name="zipcode" aria-label="cep" > 
-                    <button type="button" class="btn btn-danger">Ok</button> 
-                  </div>
+                  <form class="d-flex" id="form1">
+                    <input type="number" class="form-control" placeholder="00000-000" id="cep"> 
+                    <button type="submit" id="btn_cep" class="btn btn-danger">Buscar</button> 
+                  </form>
                   <div> 
                     <a href="https://buscacepinter.correios.com.br/" target="_blank" >Não sei o CEP</a> <p></p>
                   </div> 
+                  <div class="resultado_cep"></div>
                 </div>
               </div>     
             </div>   
@@ -134,6 +134,7 @@
         </footer>
       </div>
 
+      <script src="jQuery.js"></script>
       <script src="pagina_compra.js"></script>
       
     </body>
