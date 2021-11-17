@@ -51,7 +51,7 @@ html[data-theme='light']{
 }
 
 html[data-theme='dark']{
-    --bg: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    --bg: linear-gradient( to right,#2e3829, rgb(44, 44, 44), #2e3829);
     --bg-div: rgb(33, 37, 41);
     --text: white;
     --bg-cards: rgb(53, 57, 61);
