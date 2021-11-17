@@ -13,10 +13,13 @@ h3 {
 }
 
 body {
+    background-color: #fff;
     background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
 }
 
 .meuspedidos{
+    height: 8cm;
+    padding-right: 150px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -28,7 +31,8 @@ body {
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 7px;
-    background-color: rgb(228, 228, 228);
+    /*background-color: rgb(228, 228, 228);*/
+    background-color: rgb(248, 249, 250);
     color: black;
     font: sans-serif;
     margin-left: 150px;
@@ -131,15 +135,16 @@ img{
 }
 
 .resumo{
-    position: fixed;
+    /*position: fixed;*/
     margin-bottom: 100px;
     left: 23.3cm;
     width: 330px;
-    height: 277px;
+    height: 280px; /*277px*/
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 5px;
-    background-color: rgb(228, 228, 228);
+    /*background-color: rgb(228, 228, 228);*/
+    background-color: rgb(248, 249, 250);
     color: black;
     font: sans-serif;
 }
@@ -189,7 +194,8 @@ img{
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 5px;
-    background-color: rgb(228, 228, 228);
+    /*background-color: rgb(228, 228, 228);*/
+    background-color: rgb(248, 249, 250);
     color: black;
     font: sans-serif;
     margin-left: 150px;
@@ -229,4 +235,104 @@ li {
 .reembolso{
     font-size: 10pt;
     color: rgb(80, 80, 80);
+}
+
+.levetambem{
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-top: 8px;
+    /*background-color: rgb(228, 228, 228);*/
+    background-color: rgb(248, 249, 250);
+    margin-left: 150px;
+    width: 700px;
+    height: 300px;
+}
+
+.levetambem h6{
+    font: sans-serif;
+}
+
+
+.imgssugest{
+    display: flex;
+}
+
+.sugestao1{
+    border-radius: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.658);
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    /*background-color: rgb(35, 236, 0);*/
+    font: normal 10pt sans-serif;
+}
+
+.sugestao1 s{
+    color: #dc3545;
+}
+
+.valoressugest1{
+    margin-left: 2px;
+    text-align: left;
+}
+
+.sugestao2{
+    border-radius: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.658);
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    /*background-color: thistle;*/
+    font: normal 10pt sans-serif;
+}
+
+.sugestao2 s{
+    color: #dc3545;
+}
+
+.valoressugest2{
+    margin-left: 2px;
+    text-align: left;
+}
+
+.sugestao3{
+    border-radius: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.658);
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    /*background-color: rgb(10, 47, 255);*/
+    font: normal 10pt sans-serif;
+}
+
+.sugestao3 s{
+    color: #dc3545;
+}
+
+.valoressugest3{
+    margin-left: 2px;
+    text-align: left;
+}
+
+.sugestao4{
+    border-radius: 5%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.658);
+    margin: 5px;
+    padding: 10px;
+    width: 150px;
+    /*background-color: thistle;*/
+    font: normal 10pt sans-serif;
+}
+
+.sugestao4 s{
+    color: #dc3545;
+}
+
+.valoressugest4{
+    margin-left: 2px;
+    text-align: left;
 }

@@ -8,7 +8,7 @@
 * Nathan Augusto Alves da Silva - 202103045383
 
 ## Finalidade do projeto:
-Montar um site de E-comerce composto por seis páginas feitas por cada um dos integrantes do grupo, sendo elas a página inicial, a lista de produtos da loja, a página individual de um produto, o carrinho de compras, FAQ e a página de login e cadastro.
+Montar um site de E-comerce composto por seis páginas feitas por cada um dos integrantes do grupo,com a finalidade de ajudar as pessoas a comprarem frutas e verduras sem sair da sua casa, sendo elas a página inicial que terá a apresentação da loja em si, a lista de produtos terá todos os nossos produtos disponiveis em nosso site e os valores dos produtos, a página de compra de um produto terá todas as informações do produtos como: valores,descrição,parcelamento e etc. O carrinho de compras terá todos os produtos escolhidos pelo cliente e será onde o cliente irá escolher a forma de pagamento e finalizar sua compra,o FAQ irá tirar todas suas dúvidas e informações do site e a página de login/cadastro terá o intuito de cadastrar ou logar o cliente com suas informações necessárias para conseguir fazer suas compras em nosso site.
 
 ### [Página inicial](index.html) - Luan Henrique Alves de Lira
 
