@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html data-theme='light'>
     <head>
         <meta charset="UTF-8" lang="pt-br">
         <title>iHortiFruti</title>
@@ -10,7 +10,7 @@
     </head>
     <body>
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="Pagina inicial/index.html">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
@@ -48,7 +48,7 @@
             </div>
         </nav>
       </header> <br><br>
-      <div class="página textopreto">
+      <div class="página">
         <h1>Todos os produtos</h1><br>
         <div class="container" style="position: relative;">
           <div>
@@ -98,7 +98,7 @@
             </form>
           </div><br>
           <div class="row gap-3">
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
                     <img src="Images/Banana.png" class="card-img-top px-2 py-2" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Banana</h5>
@@ -106,7 +106,7 @@
                       <a class="btn btn-danger" href="pagina_compra.html">Veja a oferta</a>
                     </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
                     <img src="Images/Abacate.png" class="card-img-top px-2 py-2">
                     <div class="card-body">
                       <h5 class="card-title">Abacate</h5>
@@ -114,7 +114,7 @@
                       <a class="btn btn-danger" href="#">Veja a oferta</a>
                     </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
                     <img src="Images/Abacaxi.png" class="card-img-top px-2 py-2" alt="">
                     <div class="card-body">
                       <h5 class="card-title">Abacaxi</h5>
@@ -122,7 +122,7 @@
                       <a class="btn btn-danger" href="#">Veja a oferta</a>
                     </div>
               </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
               <img src="Images/Amora.png" class="card-img-top px-2 py-2" alt="">
               <div class="card-body">
                 <h5 class="card-title">Amora</h5>
@@ -130,7 +130,7 @@
                 <a class="btn btn-danger" href="#">Veja a oferta</a>
               </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
               <img src="Images/cacau.png" class="card-img-top px-2 py-2" alt="">
               <div class="card-body">
                 <h5 class="card-title">Cacau</h5>
@@ -138,7 +138,7 @@
                 <a class="btn btn-danger" href="#">Veja a oferta</a>
              </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
               <img src="Images/Caju.png" class="card-img-top px-2 py-2" alt="">
               <div class="card-body">
                 <h5 class="card-title">Caju</h5>
@@ -146,7 +146,7 @@
                 <a class="btn btn-danger" href="#">Veja a oferta</a>
              </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
               <img src="Images/Carambola.png" class="card-img-top px-2 py-2" alt="">
               <div class="card-body">
                 <h5 class="card-title">Carambola</h5>
@@ -154,7 +154,7 @@
                 <a class="btn btn-danger" href="#">Veja a oferta</a>
              </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
               <img src="Images/Coco.png" class="card-img-top px-2 py-2" alt="">
               <div class="card-body">
                 <h5 class="card-title">Coco</h5>
@@ -162,7 +162,7 @@
                 <a class="btn btn-danger" href="#">Veja a oferta</a>
               </div>
             </div>
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto cardcustom" style="width: 18rem;">
               <img src="Images/Goiaba.png" class="card-img-top px-2 py-2" alt="">
               <div class="card-body">
                 <h5 class="card-title">Goiaba</h5>
@@ -174,7 +174,11 @@
         </div><br>
       </div>
       <div class="container-fluid px-0">
-        <footer class="py-3 mb-auto mt-5 bg-light">
+        <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
+        <label class="dot" for="checkboxdarkmode">
+          <img id="themeswitcher" onclick="themeswitch()" src="/Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+        </label>
+        <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produtos</a></li>
