@@ -35,7 +35,7 @@ function themeswitch() {
         document.getElementById("footerbottom").className = document.getElementById("footerbottom").className.replace( /(?:^|\s)bg-dark(?!\S)/g , '' )
     }else{
         document.documentElement.setAttribute('data-theme', 'dark')
-        switcher.setAttribute('src', '/Images/sun-64x64.png')
+        switcher.setAttribute('src', 'Images/sun-64x64.png')
         document.getElementById("footerbottom").className += " bg-dark";
         document.getElementById("navbartop").className += " navbar-dark";
         document.getElementById("navbartop").className += " bg-dark";
