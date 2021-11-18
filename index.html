@@ -15,43 +15,45 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
+  <header>
+    <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Pagina inicial/index.html">
+            <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
+            
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="produtos.html">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="FAQ.html">FAQ</a>
+              </li>
+            </ul> 
+            <form class="input-group me-auto">
+              <input class="form-control me-2" type="search" placeholder="Ex.: Banana, pera, uva..." aria-label="Search">
+              <button class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</button>
+            </form>
+            <form class="d-flex my-2">
+              <a class="btn btn-danger me-2 text-nowrap" type="button" href="Cadastro.html" target="_blank" role="button">login / cadastro</a>
+            </form>
+            <form class="d-flex my-2">
+              <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
+                <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
+                Carrinho
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 <ul class="navbar-nav me-3 mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="produtos.html">Produtos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="FAQ.html">FAQ</a>
-                  </li>
-                </ul> 
-                <form class="input-group me-auto">
-                  <input class="form-control me-2" type="search" placeholder="Ex.: Banana, pera, uva..." aria-label="Search">
-                  <button class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</button>
-                </form>
-                <form class="d-flex">
-                  <button class="btn btn-light me-2 text-nowrap" type="button" href="#">
-                  <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
-                  <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
-                    <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
-                    Carrinho
-                  </a>
-                </form>
-              </div>
-            </div>
-        </nav>
-      </header>
+            </form>
+          </div>
+        </div>
+    </nav>
+  </header>
 
       <!--Puxando Saco da loja-->
 
@@ -213,27 +215,22 @@
     </label>
   </div>
 
-</section>
-
 <!--Footer-->
-
-<div  id="footerbottom">
-<div class="container-fluid px-0" style="display: block; text-align: center;" >
-  <footer  class="py-3 mb-auto mt-5 bg-light">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3"  id="footerbottom">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">Produtos</a></li>
-            <li class="nav-item"><a class="nav-link px-2 text-muted" href="FAQ.html">FAQ</a></li>
-            <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Cadastro</a></li>
-    </ul>
-    <p  class= "text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p> 
-  </footer>
+<footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produtos</a></li>
+    <li class="nav-item"><a class="nav-link px-2 text-muted" href="FAQ.html">FAQ</a></li>
+    <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Cadastro</a></li>
+  </ul>
+  <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
+</footer>
 </div>
+</section>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script type="text/javascript" src="Pagina Inicial.Js" ></script>
-
 </body>
 </body>
 

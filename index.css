@@ -16,6 +16,7 @@ html[data-theme='dark']{
     --text-color: white;
     --bg-card: gray;
     --bg-roda: black;
+    --btn-cor:rgb(235, 78, 78);
 }
 
 html{
@@ -143,6 +144,17 @@ html{
     background-color: var(--btn-cor);
 }
 
-#footerbottom{
+.headerfooter{
     background-color: var(--bg-roda);
+    text-align: center;
+    display: block;
 }
+
+#footerbottom{
+    text-align: center;
+}
+
+#btn-navbar{
+    background-color:var(--bg-roda);
+}
+    
