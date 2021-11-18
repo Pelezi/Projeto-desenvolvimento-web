@@ -42,7 +42,8 @@ body {
     background-color: var(--color-dot);
     border-radius: 50%;
     bottom: 20px;
-    right: 20px;}
+    right: 20px;
+}
 
 .center {
     margin-left: 5px;
