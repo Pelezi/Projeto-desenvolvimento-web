@@ -79,7 +79,7 @@ html[data-theme='light']{
 }
 
 html[data-theme='dark']{
-    --bg:  linear-gradient( to right,rgb(37, 41, 53), rgb(38, 38, 41), rgb(37, 41, 53));
+    --bg:  linear-gradient( to right,rgb(38, 46, 70), rgb(38, 38, 41), rgb(38, 46, 70));
     --bg-div: rgb(33, 37, 41);
     --text: white;
     --bg-cards: rgb(53, 57, 61);
