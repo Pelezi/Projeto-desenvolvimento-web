@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-theme='light' lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,7 @@
 
     <header> <!--cabeçalho-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div id="navbartop" class="container-fluid">
               <a class="navbar-brand" href="index.html" target="_blank">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
                 
@@ -40,8 +40,8 @@
                 </form>
                 <form class="d-flex">
                     <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
-                    <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
-                        <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
+                    <a id="carrinho" class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
+                        <img id="cart" src="Images/shopping-cart.png" alt="" width="25px" height="25px">
                         Carrinho
                     </a>
                 </form>
@@ -81,26 +81,30 @@
             <input type="checkbox" name="" id="checke4">
             <label for="checke4">Estou com problema no pedido, como posso resolver ?</label>
             <ul>
-                <li><a href="#">Você envia o número do pedido para a gente verifica a sua compra </a></li>
+              <li><a href="#">O IHortiFruti atende através dos números 4098-4612 (capitais e regiões metropolitanas),</a></li>
             </ul><br>
         </div><br><br><br>
 
     </nav>
+    
+  </div>
 
-    
-        </div>
-        <div class="container-fluid px-0">
-        <footer class="py-3 mb-auto mt-5 bg-light">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">PRODUTOS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
-        <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Registro</a></li>
-        </ul>
-        <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
+  <div class="container-fluid px-0">
+    <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
+    <label class="dot" for="checkboxdarkmode">
+      <img id="themeswitcher" onclick="themeswitch()" src="Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+    </label>
+        <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">PRODUTOS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Registro</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
         </footer>
-        </div>
-    
+  </div>
+    <script src="FAQ.js"></script>
        
 </body>
 </html>

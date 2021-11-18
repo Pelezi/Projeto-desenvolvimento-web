@@ -7,6 +7,8 @@
 body{
 
     background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    background: var(--bg);
+    color: var(--text);
 }
 
 .button{
@@ -22,7 +24,7 @@ body{
     height: auto;
     font-family: arial;
     margin: 80px auto;
-
+  
 }
 
 .item label{
@@ -38,7 +40,7 @@ body{
 }
 .item label:hover {
 
-    background-color: saddlebrown;
+    background-color: #DB4D3F;
 }
   
 .item ul{
@@ -67,7 +69,7 @@ body{
     background-color: slategray;
     color: rgb(255, 255, 255) ;
     border-bottom: solid 2px ; /*linha de baixo do home*/
-    }
+}
     
 .item ul li a:hover{
 
@@ -81,3 +83,70 @@ body{
     transform: all;
 
 }
+/*tema escuro*/
+
+html[data-theme='light']{
+    --bg: linear-gradient( to right,#dbf0ca, #fff, #dbf0ca);
+    --bg-div: rgb(248, 249, 250);
+    --text: black;
+    --bg-cards: rgb(255, 255, 255);
+    --color-dot: #bbb;
+    --color-shadow: rgb(223, 223, 223);
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .5s ease-in-out, box-shadow .25s ease-in-out
+}
+
+html[data-theme='dark']{
+    --bg:  linear-gradient( to right,rgb(37, 41, 53), rgb(38, 38, 41), rgb(37, 41, 53));
+    --bg-div: rgb(33, 37, 41);
+    --text: white;
+    --bg-cards: rgb(53, 57, 61);
+    --color-dot: rgb(58, 60, 66);
+    --color-shadow: rgb(0, 0, 0);
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out
+}
+
+.dot{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-dot);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
+
+.navbar{
+    box-shadow: 0px 0px 10px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
+
+
+
+.center{
+    margin-left: 5px;
+}
+
+.btn-light{
+    transition: var(--transitiontheme);
+}
+
+.btn-dark{
+    transition: var(--transitiontheme);
+
+}
+.cardcustom{
+
+    background-color: var(--bg-cards);
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
+
+.headerfooter{
+
+    background-color: var(--bg-div);
+    transition: var(--transitiontheme);
+}
+    
