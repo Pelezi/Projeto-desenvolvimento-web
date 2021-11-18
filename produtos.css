@@ -1,12 +1,4 @@
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -15,18 +7,37 @@ body {
     color: var(--text);
 }
 
-.headerfooter{
-    background-color: var(--bg-div)
+.navbar{
+    box-shadow: 0px 0px 10px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
+
+.footer{
+    background-color: var(--bg-div);
+    transition: var(--transitiontheme);
 }
 
 .cardcustom{
     background-color: var(--bg-cards);
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
+
+.btn-light{
+    transition: var(--transitiontheme);
+}
+
+.btn-dark{
+    transition: var(--transitiontheme);
+
 }
 
 .página{
     background-color: var(--bg-div);
     margin-left: 5%;
     margin-right: 5%;
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .dot{
@@ -36,24 +47,33 @@ body {
     background-color: var(--color-dot);
     border-radius: 50%;
     bottom: 20px;
-    right: 20px;}
+    right: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
 
 .center {
     margin-left: 5px;
-  }
+}
 
+/* darkmode */
 html[data-theme='light']{
-    --bg: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    --bg: linear-gradient( to right,#dbf0ca, #fff, #dbf0ca);
     --bg-div: rgb(248, 249, 250);
     --text: black;
     --bg-cards: rgb(255, 255, 255);
     --color-dot: #bbb;
+    --color-shadow: rgb(223, 223, 223);
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .5s ease-in-out, box-shadow .25s ease-in-out
 }
 
 html[data-theme='dark']{
-    --bg: linear-gradient( to right,#2e3829, rgb(44, 44, 44), #2e3829);
+    --bg:  linear-gradient( to right,rgb(38, 46, 70), rgb(38, 38, 41), rgb(38, 46, 70));
     --bg-div: rgb(33, 37, 41);
     --text: white;
     --bg-cards: rgb(53, 57, 61);
-    --color-dot: #bbb;
+    --color-dot: rgb(58, 60, 66);
+    --color-shadow: rgb(0, 0, 0);
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out
 }

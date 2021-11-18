@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html data-theme='light' lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="shortcut icon" href="Images/favicon-16x16.png" type="image/x-icon">
-    
+    <link rel="stylesheet" href="FAQ.css">
     <title>iHortifruti</title>
 </head>
 
@@ -14,7 +14,7 @@
 
     <header> <!--cabeçalho-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div id="navbartop" class="container-fluid">
               <a class="navbar-brand" href="index.html" target="_blank">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
                 
@@ -40,8 +40,8 @@
                 </form>
                 <form class="d-flex">
                     <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
-                    <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
-                        <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
+                    <a id="carrinho" class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
+                        <img id="cart" src="Images/shopping-cart.png" alt="" width="25px" height="25px">
                         Carrinho
                     </a>
                 </form>
@@ -58,139 +58,53 @@
     <nav class="Menu-principal">
         <div class="item">
             <input type="checkbox" name="" id="checke1">
-            <label for="checke1">O que nosso HortiFruti vende ?</label>
+            <label for="checke1">O que nosso iHortiFruti  oferece  ao cliente ?</label>
             <ul>
-                <li><a href="#">Vendemos Maçã , Banana , Abacaxi, Morango </a></li>
+                <li><a href="#">Vendemos Maçã, Banana, Abacaxi, Morango </a></li>
             </ul>
         </div>
         <div class="item">
             <input type="checkbox" name="" id="checke2">
-            <label for="checke2">Como funciona o envio do pedido ?</label>
+            <label for="checke2">Como funciona o envio do pedido?</label>
             <ul>
-                <li><a href="#">solicitamos um delivery para deixar a encomenda na sua residência </a></li>
+                <li><a href="#">Solicitamos um delivery para deixar a encomenda na sua residência </a></li>
             </ul>
         </div>
         <div class="item">
             <input type="checkbox" name="" id="checke3">
-            <label for="checke3">Quais formas de pagamento ?</label>
+            <label for="checke3">Quais formas de pagamento?</label>
             <ul>
-                <li><a href="#" >Aceitamos Dinheiro , Cartão de Crédito , Cartão de Débito , Pix</a></li>   
+                <li><a href="#" >Aceitamos Dinheiro, Cartão de Crédito, Cartão de Débito e Pix</a></li>   
             </ul>
         </div>
         <div class="item">
             <input type="checkbox" name="" id="checke4">
-            <label for="checke4">Tive um problema no pedido , como posso resolver ?</label>
+            <label for="checke4">Estou com problema no pedido, como posso resolver ?</label>
             <ul>
-                <li><a href="#">Você envia o numero do pedido para a gente verifica a sua compra </a></li>
+              <li><a href="#">O IHortiFruti atende através dos números 4098-4612 (capitais e regiões metropolitanas),</a></li>
             </ul><br>
         </div><br><br><br>
 
     </nav>
-
     
-        </div>
-        <div class="container-fluid px-0">
-        <footer class="py-3 mb-auto mt-5 bg-light">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-        <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">PRODUTOS</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
-        <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Registro</a></li>
-        </ul>
-        <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
+  </div>
+
+  <div class="container-fluid px-0">
+    <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
+    <label class="dot" for="checkboxdarkmode">
+      <img id="themeswitcher" onclick="themeswitch()" src="Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+    </label>
+        <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">PRODUTOS</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="Cadastro.html" target="_blank" class="nav-link px-2 text-muted">Login / Registro</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
         </footer>
-        </div>
-
-
-
-    <style>
-    
-        *{
-        margin: 0;
-        padding: 0;
-
-        }
-
-        body{
-
-            background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
-        }
-
-        .button{
-
-            text-decoration:none ;
-            color: rgb(255, 255, 255);
-
-        }
-
-        .Menu-principal{
-
-            width: 830px;/*almentar o tamanho da fonte*/
-            height: auto;
-            font-family: arial;
-            margin: 80px auto;
-        }
-        .item label{
-
-            display: block;
-            padding: 10pt;
-            background-color: #434343;
-            font-size: 20px;
-            cursor: pointer;
-            color: #fff;
-            border-bottom: solid 2px #aaa;
-
-        }
-        .item label:hover {
-
-            background-color: saddlebrown;
-        }
-        .item ul{
-
-            width: 100%;
-            list-style: none;
-            overflow: hidden;
-            max-height: 0;/*aqqui*/
-            transition: all .4s linear;
-        }
-
-        .item input{
-
-            display: none;
-
-
-        }
-
-
-        .item ul li a{
-
-            width: 100%; 
-            height: 70px;
-            padding: 15px; /*centraliza a frase na resposta*/
-            display: block;
-            text-decoration: none;
-            background-color: slategray;
-            color: rgb(255, 255, 255) ;
-            border-bottom: solid 2px ; /*linha de baixo do home*/
-        }
-        
-        .item ul li a:hover{
-
-            background-color: #9cf;
-        }
-
-        .item input:checked ~ ul{
-
-            height: auto;
-            max-height: 200px;
-            transform: all;
-
-
-        }
-
-    </style>
-    
-
+  </div>
+    <script src="FAQ.js"></script>
        
 </body>
 </html>

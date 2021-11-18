@@ -1,3 +1,26 @@
+html[data-theme='light']{
+    --bg: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    --bg-div: rgb(248, 249, 250);
+    --text: black;
+    --bg-cards: rgb(255, 255, 255);
+    --color-dot: #bbb;
+    --color-shadow: rgb(233, 233, 233);
+    --cartext: black;
+    --carbtn: rgb(248, 249, 250);
+    --reetext:  rgb(80, 80, 80);
+}
+
+html[data-theme='dark']{
+    --bg: linear-gradient( to right,rgb(37, 41, 53), rgb(38, 38, 41), rgb(37, 41, 53));
+    --bg-div: rgb(33, 37, 41);
+    --text: white;
+    --bg-cards: rgb(53, 57, 61);
+    --color-dot: #bbb;
+    --color-shadow: rgba(0, 0, 0, 0.356);
+    --cartext: #bbb;
+    --carbtn: rgb(53, 57, 61);
+    --reetext: #bbb;
+}
 
 h1 {
     text-align: left;
@@ -13,8 +36,22 @@ h3 {
 }
 
 body {
-    background-color: #fff;
-    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    background: var(--bg);
+    color: var(--text);
+    /*background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);*/
+}
+
+.textCarrinho{
+    height: 9px;
+    color: var(--cartext);
+}
+
+.headerfooter{
+    background-color: var(--bg-div)
+}
+
+.navbar{
+    box-shadow: 0px 0px 10px var(--color-shadow);
 }
 
 .meuspedidos{
@@ -26,16 +63,18 @@ body {
 }
 
 .carrinho{
+    display: flexbox;
     width: 700px;
     height: 310px;
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 7px;
     /*background-color: rgb(228, 228, 228);*/
-    background-color: rgb(248, 249, 250);
-    color: black;
+    background-color: var(--bg-div);
+    color: var(--text);
     font: sans-serif;
     margin-left: 150px;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .bananaimage{
@@ -63,10 +102,10 @@ body {
     width: 684px;
     display: table;
     border: 1px solid transparent;
-    background-color: white;
+    background-color: var(--bg-cards);
     padding: 8px;
     border-radius: 6px;
-
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .abacateimage{
@@ -88,42 +127,86 @@ body {
 }
 
 .produtoabacate s{
-    color: #dc3545;
+    color: rgb(220, 53, 69);
 }
 
 .pedido2{
     display: table;
     width: 684px;
     border: 1px solid transparent;
-    background-color: white;
+    background-color: var(--bg-cards);
     padding: 8px;
     border-radius: 6px;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .trashbutton1 button{
     float: right;
     border: none;
     background-color: transparent;
-    margin-right: 3px;
+    margin-right: 18px;
 }
 
 .trashbutton2 button{
     float: right;
     border: none;
     background-color: transparent;
-    margin-right: 3px;
+    margin-right: 18px;
 }
 
-.selectquantidade1 select{
-    margin-left: 490px;
-    width: 33px;
+.selectquantidade1 {
+    width: 60px;
+    background-color: rgb(220, 53, 69);
+    display: flex;
+    border-radius: 10px 5px 8px;
+    margin-left: 450px;
     float: right;
+    font-family: serif;
+    font-family: serif;
+    color: white;
 }
 
-.selectquantidade2 select{
-    margin-left: 490px;
-    width: 33px;
+.selectquantidade1 button{
+    background-color: transparent;
+    border: none;
+}
+.qtmenos1{
+    margin-right: 5px;
+    font-family: serif;
+    font-family: serif;
+    color: white;
+}
+
+.qtmais1{
+    margin-left: 5px;
+    font-family: serif;
+    color: white;
+}
+
+.selectquantidade2 {
+    width: 60px;
+    background-color: rgb(220, 53, 69);
+    display: flex;
+    border-radius: 10px 5px 8px;
+    margin-left: 450px;
     float: right;
+    font-family: serif;
+    color: white;
+}
+
+.selectquantidade2 button{
+    background-color: transparent;
+    border: none;
+    font-family: serif;
+    color: white;
+}
+
+.qtmenos2{
+    margin-right: 5px;
+}
+
+.qtmais2{
+    margin-left: 5px;
 }
 
 input {
@@ -143,10 +226,10 @@ img{
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 5px;
-    /*background-color: rgb(228, 228, 228);*/
-    background-color: rgb(248, 249, 250);
-    color: black;
+    background-color: var(--bg-div);
+    color: var(--text);
     font: sans-serif;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .listasresumo{
@@ -154,8 +237,9 @@ img{
     justify-content: space-between;
     border: 1px solid transparent;
     border-radius: 6px;
-    background-color: white;
+    background-color: var(--bg-cards);
     display: flex;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .listasresumo ul{
@@ -173,9 +257,10 @@ img{
     margin-bottom: 23px;
     border: 1px solid transparent;
     border-radius: 6px;
-    background-color: white;
+    background-color: var(--bg-cards);
     justify-content: space-between;
     display: flex;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .totaltotal ul{
@@ -194,15 +279,15 @@ img{
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 5px;
-    /*background-color: rgb(228, 228, 228);*/
-    background-color: rgb(248, 249, 250);
-    color: black;
+    background-color: var(--bg-div);
+    color: var(--text);
     font: sans-serif;
     margin-left: 150px;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .formasdepagamento{
-    border-right: 1px solid silver;
+    border-right: 1px solid var(--reetext);
     font: sans-serif;
     margin-top: 5px;
     width: 50%;
@@ -228,24 +313,23 @@ li {
     margin-top: 5px;
     margin-right: 5px;
     text-align: center;
-    /* background-color: rgb(148, 224, 152); */
     width: 50%;
 }
 
 .reembolso{
     font-size: 10pt;
-    color: rgb(80, 80, 80);
+    color: var(--reetext);
 }
 
 .levetambem{
     border-radius: 6px;
     padding-left: 20px;
     padding-top: 8px;
-    /*background-color: rgb(228, 228, 228);*/
-    background-color: rgb(248, 249, 250);
+    background-color: var(--bg-div);
     margin-left: 150px;
     width: 700px;
     height: 300px;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .levetambem h6{
@@ -254,18 +338,21 @@ li {
 
 
 .imgssugest{
+    margin-left: 10px;
     display: flex;
 }
 
 .sugestao1{
     border-radius: 5%;
     border: none;
-    background-color: rgba(255, 255, 255, 0.658);
+    /*background-color: rgba(255, 255, 255, 0.658);*/
+    background-color: var(--bg-cards);
     margin: 5px;
     padding: 10px;
     width: 150px;
-    /*background-color: rgb(35, 236, 0);*/
     font: normal 10pt sans-serif;
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    color: var(--text);
 }
 
 .sugestao1 s{
@@ -280,12 +367,13 @@ li {
 .sugestao2{
     border-radius: 5%;
     border: none;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: var(--bg-cards);
     margin: 5px;
     padding: 10px;
     width: 150px;
-    /*background-color: thistle;*/
     font: normal 10pt sans-serif;
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    color: var(--text);
 }
 
 .sugestao2 s{
@@ -300,12 +388,13 @@ li {
 .sugestao3{
     border-radius: 5%;
     border: none;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: var(--bg-cards);
     margin: 5px;
     padding: 10px;
     width: 150px;
-    /*background-color: rgb(10, 47, 255);*/
     font: normal 10pt sans-serif;
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    color: var(--text);
 }
 
 .sugestao3 s{
@@ -320,12 +409,13 @@ li {
 .sugestao4{
     border-radius: 5%;
     border: none;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: var(--bg-cards);
     margin: 5px;
     padding: 10px;
     width: 150px;
-    /*background-color: thistle;*/
     font: normal 10pt sans-serif;
+    box-shadow: 1px 1px 4px var(--color-shadow);
+    color: var(--text);
 }
 
 .sugestao4 s{
@@ -335,4 +425,19 @@ li {
 .valoressugest4{
     margin-left: 2px;
     text-align: left;
+}
+
+.dot{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-dot);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.center {
+    margin-left: 5px;
 }
