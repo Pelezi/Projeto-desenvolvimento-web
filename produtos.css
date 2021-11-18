@@ -69,13 +69,13 @@ body {
   }
 
 html[data-theme='light']{
-    --bg: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    --bg: linear-gradient( to right,#dbf0ca, #fff, #dbf0ca);
     --bg-div: rgb(248, 249, 250);
     --text: black;
     --bg-cards: rgb(255, 255, 255);
     --color-dot: #bbb;
     --color-shadow: rgb(223, 223, 223);
-    --transitiontheme:color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out, background-image .5s ease-in-out;
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .5s ease-in-out, box-shadow .25s ease-in-out
 }
 
 html[data-theme='dark']{
@@ -85,5 +85,5 @@ html[data-theme='dark']{
     --bg-cards: rgb(53, 57, 61);
     --color-dot: rgb(58, 60, 66);
     --color-shadow: rgb(0, 0, 0);
-    --transitiontheme:color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out, background-image .5s ease-in-out;
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out
 }
