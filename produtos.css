@@ -20,7 +20,7 @@ body {
     transition: var(--transitiontheme);
 }
 
-.headerfooter{
+.footer{
     background-color: var(--bg-div);
     transition: var(--transitiontheme);
 }
