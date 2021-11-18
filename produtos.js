@@ -7,7 +7,7 @@ function FbotonOn() {
     else if(document.getElementById('legumes').checked)
         null
     else
-       alert('checked')
+       alert('Você não selecionou nenhum filtro')
 }
 
 const switcher = document.querySelector("#themeswitcher");
