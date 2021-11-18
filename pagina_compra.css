@@ -5,6 +5,7 @@ html[data-theme='light']{
     --bg-cards: rgb(255, 255, 255);
     --color-dot: #bbb;
     --shadow: rgb(233, 233, 233);
+    --transitiontheme:color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out, background-image .5s ease-in-out;
 }
 
 html[data-theme='dark']{
@@ -14,6 +15,7 @@ html[data-theme='dark']{
     --bg-cards: rgb(53, 57, 61);
     --color-dot: #bbb;
     --shadow: rgba(0, 0, 0, 0.356);
+    --transitiontheme:color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out, background-image .5s ease-in-out;
 }
 
 .dot{
@@ -34,14 +36,31 @@ body {
 
 .navbar{
     box-shadow: 0px 0px 10px var(--shadow);
+    transition: var(--transitiontheme);
 }
+#cabeçalho{
+    box-shadow: 0px 0px 10px var(--shadow);
+    transition: var(--transitiontheme);
+}
+
+.btn-light{
+    transition: var(--transitiontheme);
+}
+
+.btn-dark{
+    transition: var(--transitiontheme);
+
+}
+
 .venda{
+    transition: var(--transitiontheme);
     background-color: var(--bg) ;
     width: 1200px;
     margin: auto;
 }
 
 .conteudo{
+    transition: var(--transitiontheme);
     background-color: var(--bg-div);
     box-shadow: 1px 1px 4px var(--shadow);
     display: table;
@@ -95,6 +114,7 @@ h3{
 }
 
 .CEP{
+    transition: var(--transitiontheme);
     width: 500px;
     background-color: var(--bg-div);
     box-shadow: 1px 1px 4px var(--shadow);
@@ -119,8 +139,20 @@ h3{
     margin-right: 180px;
 }
 .card{
+    transition: var(--transitiontheme);
     background-color: var(--bg-div);
-    box-shadow: 0px 0px 10px var(--shadow);    
+    box-shadow: 0px 0px 10px var(--shadow);
+    margin-bottom: 80px;    
+}
+.card > img {
+    margin-left: 8px;
+    height: 300px;
+    width: 270px;
+    transition: all linear 0.4s;
+}
+
+.card > img:hover{
+    transform: scale(1.1);  
 }
 
 .texto1{
@@ -164,7 +196,7 @@ h3{
     background-color: rgba(0, 0, 0, .7);
     position: fixed;
     visibility: hidden;
-    z-index: 1;
+    z-index: 3;
     opacity: 0;
     transition: visibility 0.8s linear, opacity 0.5s linear;
 }
