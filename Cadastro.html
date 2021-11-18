@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,12 +12,12 @@
 <body>
 
     <header><!--cabeçalho-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html" >
               <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
-              
             </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,7 +39,7 @@
               </form>
               <form class="d-flex">
                 <button class="btn btn-danger me-2 text-nowrap" type="button" href="#">login / cadastro</button>
-                <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
+                <a id="carrinho" class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
                   <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
                   Carrinho
                 </a>
@@ -49,38 +49,33 @@
       </nav>
     </header> <br>
 
-
-
-
-
-
-
+    
     <form action="" class="cliente"><!--conteudo-->
-   <div class="pai-div">
-      <div class="cadastro"><br>
+      <div class="pai-div">
+       <div class="cadastro"><br>
         <h1>Cadastro</h1><br>
-
-
-        
 
         <input type="text" class="form-control" placeholder="Nome">
         
-        <input type="text" class="form-control" placeholder="Sobrenome">
-        <br>
+        <input type="text" class="form-control" placeholder="Sobrenome"><br>
 
         <p class="endereco">Em que ano você nasceu ?</p>
         <input type="date" name="" id=""> <br> <br>
        
-        <input type="email" class="form-control" id="floatingInput" placeholder="E-mail"> 
+        <input type="email" class="form-control" id="floatingInput" placeholder="E-mail" data-min-length="3"> 
         
         <input type="email" class="form-control" id="floatingInput" placeholder="Confirme o E-mail"> <br>
         <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Confirme a senha"><br>
-        <button type="submit" class="btn btn-danger">Cadastrar</button><br><br><br>
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Confirme a senha">
+        <p class="error-validation template">d</p><!--o nome com o erro-->
+
+        <input type="checkbox" name="" id="">
+        <label for="">Li e concordo com  os <a href="#">termos de uso</a></label><br>
+
+       <br><button type="submit3" class="btn btn-danger">Cadastrar</button><br><br><br>
       </div>
         
-        
-       <!--<span>Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emoji.</span>-->
+      
 
        <br><br><br><br><br><br>
         
@@ -104,20 +99,25 @@
                     
                       <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
                       
-                      <label for="floatingPassword">Senha</label><br>
+                      <label for="floatingPassword">Senha</label>
+
                       
-                      <button type="submit"  class="btn btn-danger" >Enviar</button><br><br>
+                      <br><button type="submit"  class="btn btn-danger" >Enviar</button><br><br>
                     </div>
                 </div>
             </div>
           </form>
     </div>
+  </div>
 
+  <!--rodapé-->
           
-          <!--rodapé-->
-          </div>
-          <div class="container-fluid px-0">
-           <footer class="py-3 mb-auto mt-5 bg-light">
+          <div class="container-fluid px-0" id="cabeçalho">
+            <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
+            <label class="dot" for="checkboxdarkmode">
+              <img id="themeswitcher" onclick="themeswitch()" src="Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+            </label>
+            <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="index.html" target="_blank" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="produtos.html" target="_blank" class="nav-link px-2 text-muted">PRODUTOS</a></li>
@@ -126,11 +126,10 @@
           </ul>
           <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
         </footer>
-         </div>
-
-         
-        
+      </div>
 
     </form>
+<script src="Cadastro.js"></script>
+
 </body>
 </html>
