@@ -17,15 +17,28 @@ body {
 
 .navbar{
     box-shadow: 0px 0px 10px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .headerfooter{
-    background-color: var(--bg-div)
+    background-color: var(--bg-div);
+    transition: var(--transitiontheme);
 }
 
 .cardcustom{
     background-color: var(--bg-cards);
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+
+}
+
+.btn-light{
+    transition: var(--transitiontheme);
+}
+
+.btn-dark{
+    transition: var(--transitiontheme);
+
 }
 
 .página{
@@ -33,6 +46,8 @@ body {
     margin-left: 5%;
     margin-right: 5%;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+
 }
 
 .dot{
@@ -44,6 +59,9 @@ body {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+    box-shadow: 2px 2px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+
 }
 
 .center {
@@ -56,7 +74,8 @@ html[data-theme='light']{
     --text: black;
     --bg-cards: rgb(255, 255, 255);
     --color-dot: #bbb;
-    --color-shadow: rgb(233, 233, 233);
+    --color-shadow: rgb(223, 223, 223);
+    --transitiontheme:color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out, background-image .5s ease-in-out;
 }
 
 html[data-theme='dark']{
@@ -64,6 +83,7 @@ html[data-theme='dark']{
     --bg-div: rgb(33, 37, 41);
     --text: white;
     --bg-cards: rgb(53, 57, 61);
-    --color-dot: #bbb;
+    --color-dot: rgb(58, 60, 66);
     --color-shadow: rgb(0, 0, 0);
+    --transitiontheme:color .5s ease-in-out, background-color .5s ease-in-out, border-color .5s ease-in-out, box-shadow .5s ease-in-out, background-image .5s ease-in-out;
 }
