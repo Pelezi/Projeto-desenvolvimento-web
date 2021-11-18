@@ -26,7 +26,7 @@ function themeswitch() {
 
     if(document.getElementById('checkboxdarkmode').checked){
         document.documentElement.setAttribute('data-theme', 'light')
-        switcher.setAttribute('src', '/Images/NicePng_moon-png_60348.png')
+        switcher.setAttribute('src', 'Images/NicePng_moon-png_60348.png')
         document.getElementById("navbartop").className += " navbar-light";
         document.getElementById("navbartop").className += " bg-light";
         document.getElementById("footerbottom").className += " bg-light";
