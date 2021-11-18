@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+}
+
+.button{
+
+    text-decoration:none ;
+    color: rgb(255, 255, 255);
+
+}
+
+.Menu-principal{
+
+    width: 830px;/*almentar o tamanho da fonte*/
+    height: auto;
+    font-family: arial;
+    margin: 80px auto;
+
+}
+
+.item label{
+
+    display: block;
+    padding: 10pt;
+    background-color: #434343;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    border-bottom: solid 2px #aaa;
+
+}
+.item label:hover {
+
+    background-color: saddlebrown;
+}
+  
+.item ul{
+
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;/*aqqui*/
+    transition: all .4s linear;
+
+}
+
+.item input{
+
+    display: none;
+
+}
+
+.item ul li a{
+
+    width: 100%; 
+    height: 70px;
+    padding: 15px; /*centraliza a frase na resposta*/
+    display: block;
+    text-decoration: none;
+    background-color: slategray;
+    color: rgb(255, 255, 255) ;
+    border-bottom: solid 2px ; /*linha de baixo do home*/
+    }
+    
+.item ul li a:hover{
+
+    background-color: #9cf;
+}
+
+.item input:checked ~ ul{
+
+    height: auto;
+    max-height: 200px;
+    transform: all;
+
+}

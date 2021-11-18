@@ -7,7 +7,7 @@ function FbotonOn() {
     else if(document.getElementById('legumes').checked)
         null
     else
-       alert('checked')
+       alert('Você não selecionou nenhum filtro')
 }
 
 const switcher = document.querySelector("#themeswitcher");
@@ -16,7 +16,7 @@ function themeswitch() {
 
     if(document.getElementById('checkboxdarkmode').checked){
         document.documentElement.setAttribute('data-theme', 'light')
-        switcher.setAttribute('src', '/Images/NicePng_moon-png_60348.png')
+        switcher.setAttribute('src', 'Images/NicePng_moon-png_60348.png')
         document.getElementById("navbartop").className += " navbar-light";
         document.getElementById("navbartop").className += " bg-light";
         document.getElementById("footerbottom").className += " bg-light";
@@ -25,7 +25,7 @@ function themeswitch() {
         document.getElementById("footerbottom").className = document.getElementById("footerbottom").className.replace( /(?:^|\s)bg-dark(?!\S)/g , '' )
     }else{
         document.documentElement.setAttribute('data-theme', 'dark')
-        switcher.setAttribute('src', '/Images/sun-64x64.png')
+        switcher.setAttribute('src', 'Images/sun-64x64.png')
         document.getElementById("footerbottom").className += " bg-dark";
         document.getElementById("navbartop").className += " navbar-dark";
         document.getElementById("navbartop").className += " bg-dark";

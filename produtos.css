@@ -15,18 +15,24 @@ body {
     color: var(--text);
 }
 
+.navbar{
+    box-shadow: 0px 0px 10px var(--color-shadow);
+}
+
 .headerfooter{
     background-color: var(--bg-div)
 }
 
 .cardcustom{
     background-color: var(--bg-cards);
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .página{
     background-color: var(--bg-div);
     margin-left: 5%;
     margin-right: 5%;
+    box-shadow: 1px 1px 4px var(--color-shadow);
 }
 
 .dot{
@@ -36,7 +42,8 @@ body {
     background-color: var(--color-dot);
     border-radius: 50%;
     bottom: 20px;
-    right: 20px;}
+    right: 20px;
+}
 
 .center {
     margin-left: 5px;
@@ -48,6 +55,7 @@ html[data-theme='light']{
     --text: black;
     --bg-cards: rgb(255, 255, 255);
     --color-dot: #bbb;
+    --color-shadow: rgb(233, 233, 233);
 }
 
 html[data-theme='dark']{
@@ -56,4 +64,5 @@ html[data-theme='dark']{
     --text: white;
     --bg-cards: rgb(53, 57, 61);
     --color-dot: #bbb;
+    --color-shadow: rgb(0, 0, 0);
 }
