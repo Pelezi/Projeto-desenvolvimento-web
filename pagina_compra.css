@@ -1,24 +1,47 @@
+html[data-theme='light']{
+    --bg: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    --bg-div: rgb(248, 249, 250);
+    --text: black;
+    --bg-cards: rgb(255, 255, 255);
+    --color-dot: #bbb;
+    --shadow: rgb(233, 233, 233);
+}
+
+html[data-theme='dark']{
+    --bg: linear-gradient( to right,#2e3829, rgb(44, 44, 44), #2e3829);
+    --bg-div: rgb(33, 37, 41);
+    --text: white;
+    --bg-cards: rgb(53, 57, 61);
+    --color-dot: #bbb;
+    --shadow: rgb(0, 0, 0);
+}
+
+.dot{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-dot);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;}
+
 body {
-    color: rgb(0, 0, 0);
-    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    background: var(--bg);
+    color: var(--text);
 }
 
-.textopreto{
-    color: black;
+.navbar{
+    box-shadow: 0px 0px 10px var(--shadow);
 }
-
-.textobranco{
-    color: white;
-}
-
 .venda{
+    background-color: var(--bg) ;
     width: 1200px;
     margin: auto;
 }
 
 .conteudo{
-    background-color: rgb(248, 249, 250);
-    box-shadow: 1px 1px 4px gray;
+    background-color: var(--bg-div);
+    box-shadow: 1px 1px 4px var(--shadow);
     display: table;
     margin-top: 80px;
 }
@@ -71,15 +94,11 @@ h3{
 
 .CEP{
     width: 500px;
-    background-color: rgb(248, 249, 250);
-    box-shadow: 1px 1px 4px gray;
+    background-color: var(--bg-div);
+    box-shadow: 1px 1px 4px var(--shadow);
     padding: 10px;
     margin-left: 630px;
     margin-top: 20px;
-}
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-    
 }
 
 #btn_cep{
@@ -96,6 +115,10 @@ input[type=number]::-webkit-inner-spin-button {
     margin-top: 20px;
     margin-left: 180px;
     margin-right: 180px;
+}
+.card{
+    background-color: var(--bg-div);
+    box-shadow: 0px 0px 10px var(--shadow);    
 }
 
 .texto1{
@@ -178,4 +201,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .container{
     background-color: #f00;
+}
+
+.center{
+    margin-left: 5px;
 }

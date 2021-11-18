@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html data-theme='light'>
     <head>
         <meta charset="UTF-8" lang="pt-br">
         <title>iHortiFruti</title>
@@ -18,7 +18,7 @@
         <span id="bt_close">&times;</span>
       </div>
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
@@ -40,7 +40,7 @@
                 </ul> 
                 <form class="input-group me-auto">
                   <input class="form-control me-2" type="search" placeholder="Ex.: Banana, pera, uva..." aria-label="Search">
-                  <a class="btn btn-outline-secondary ms-auto me-3" type="submit">Pesquisar</a>
+                  <button class="btn btn-outline-danger ms-auto me-3" type="submit">Pesquisar</button>
                 </form>
                 <form class="d-flex">
                   <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
@@ -83,7 +83,7 @@
             <div class="CEP" >
               <span>Consultar prazo e valor do frete:</span>
               <form class="d-flex" id="form1">
-                <input type="number" class="form-control" placeholder="00000-000" id="cep"> 
+                <input type="text" class="form-control" onkeypress="mascara(this, '#####-###')" maxlength="9" placeholder="00000-000" id="cep"> 
                 <button type="submit" id="btn_cep" class="btn btn-danger">Buscar</button> 
               </form>
               <div> 
@@ -97,7 +97,7 @@
       </div>  
       <section class="grid_relacionados">
         <div class="card mx-auto" style="width: 18rem;">
-          <img src="Images/Abacate.png" class="card-img-top px-2 py-2">
+          <img src="Images/Abacate.png" class="card-img-top px-2 py-2" alt="Abacate">
           <div class="card-body">
             <h5 class="card-title">Abacate</h5>
             <p class="card-text">R$3,00 <s> <small>R$5,00</small></s> <br> <small>Ou em até <b>3x</b> de <b>R$1,00</b></small></p>
@@ -105,7 +105,7 @@
           </div>
         </div>
         <div class="card mx-auto" style="width: 18rem;">
-           <img src="Images/Abacaxi.png" class="card-img-top px-2 py-2" alt="">
+           <img src="Images/Abacaxi.png" class="card-img-top px-2 py-2" alt="Abacaxi">
           <div class="card-body">
             <h5 class="card-title">Abacaxi</h5>
             <p class="card-text">R$15,00 <s> <small>R$20,00</small></s> <br> <small>Ou em até <b>5x</b> de <b>R$3,00</b></small></p>
@@ -113,7 +113,7 @@
           </div>
         </div>
         <div class="card mx-auto" style="width: 18rem;">
-          <img src="Images/Amora.png" class="card-img-top px-2 py-2" alt="">
+          <img src="Images/Amora.png" class="card-img-top px-2 py-2" alt="Amora">
           <div class="card-body">
             <h5 class="card-title">Amora</h5>
             <p class="card-text">R$12,00 <s> <small>R$15,00</small></s> <br> <small>Ou em até <b>6x</b> de <b>R$2,00</b></small></p>
@@ -123,7 +123,11 @@
       </section>
 
       <div class="container-fluid px-0">
-        <footer class="py-3 mb-auto mt-5 bg-light">
+        <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
+        <label class="dot" for="checkboxdarkmode">
+          <img id="themeswitcher" onclick="themeswitch()" src="Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+        </label>
+        <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">Produtos</a></li>
