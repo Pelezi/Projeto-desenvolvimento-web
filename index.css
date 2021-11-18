@@ -96,3 +96,15 @@ html{
     text-align: center;
     padding: 100px;
 }
+
+
+.img-zoon{
+    transition: all 0,3s;
+}
+
+.img-zoon:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
