@@ -1,12 +1,4 @@
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
+h1, h2, h3 {
     text-align: center;
 }
 
@@ -29,7 +21,6 @@ body {
     background-color: var(--bg-cards);
     box-shadow: 1px 1px 4px var(--color-shadow);
     transition: var(--transitiontheme);
-
 }
 
 .btn-light{
@@ -47,7 +38,6 @@ body {
     margin-right: 5%;
     box-shadow: 1px 1px 4px var(--color-shadow);
     transition: var(--transitiontheme);
-
 }
 
 .dot{
@@ -61,13 +51,13 @@ body {
     cursor: pointer;
     box-shadow: 2px 2px 4px var(--color-shadow);
     transition: var(--transitiontheme);
-
 }
 
 .center {
     margin-left: 5px;
-  }
+}
 
+/* darkmode */
 html[data-theme='light']{
     --bg: linear-gradient( to right,#dbf0ca, #fff, #dbf0ca);
     --bg-div: rgb(248, 249, 250);

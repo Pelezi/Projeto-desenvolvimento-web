@@ -1,3 +1,4 @@
+//filtros aviso
 function FbotonOn() { 
 
     if(document.getElementById('frutas').checked)
@@ -10,6 +11,7 @@ function FbotonOn() {
        alert('Você não selecionou nenhum filtro')
 }
 
+//switcher modo escuro e claro
 const switcher = document.querySelector("#themeswitcher");
 const cartswitcher = document.querySelector("#cart");
 
