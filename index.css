@@ -1,13 +1,25 @@
 *{
     padding: 0%;   
     display: flexbox;
-    
+}
 
+html[data-theme='light']{
+    --bg: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    --btn-cor:rgb(235, 78, 78);
+    --text-color: black;
+    --bg-card: white;
+}
+
+html[data-theme='dark']{
+    --bg:linear-gradient( to right,#2e3829, rgb(44, 44, 44), #2e3829);
+    --text-color: white;
+    --bg-card: gray;
 }
 
 html{
     scroll-behavior: smooth;
 }
+
 
 
 .row {
@@ -17,13 +29,14 @@ html{
         width: 30;
         flex-wrap: wrap;
         justify-content: space-around;
-        background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+        background-image: var(--bg);
         
 }
 
 .col-2{
         flex-basis: 50%;
         min-width: 300px;
+        color: var(--text-color);
 }
 
 .col-2 img{
@@ -35,60 +48,66 @@ html{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+    color: var(--text-color);
 }
 
 .btn-1{
     display: inline-block;
-    background-color: rgb(235, 78, 78);
-    color: white;
+    background-color: var(--btn-cor);
+    color: var(--text-color);
     padding: 8px 30px;
     margin: 30px 0;
     border-radius: 30px;
-    text-decoration:none ;
-    color: rgb(255, 255, 255);   
+    text-decoration:none;
 }
 
 #MV{
-    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
-    
+    background-image: var(--bg);
+    color: var(--text-color);
 }
 
 
 #MV h1{
     text-justify:auto;
     text-align: center;
-    
+    color:var(--texto-color)
 }
 
 .card {
     display: inline-block;
     padding: 20px;
     text-align: center;
+    color:var(--texto-color);
+    background-color:var(--bg-card);
     
 }
 
 #Novidades{
-    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    background-image: var(--bg);
+    color:var(--texto-color)
 }
 
 #Novidades h1{
     text-align: center;
+    color: var(--text-color);
 }
 
 #Blog{
-    background-image: linear-gradient( to right,#e2f1d5, #fff, #e2f1d5);
+    background-image: var(--bg);
     padding: 0%;
     margin: 0;
 }
 
 .mb-3{
     display: inline-flex;
-    
+    color: var(--text-color);
+
 }
 
 #Blog h1{
     text-align: center;
     padding: 30px;
+    color: var(--text-color);
 }
 
 .Element{
@@ -107,4 +126,17 @@ html{
     transform: scale(1.1);
 }
 
+.dot{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    background-color: var(--color-dot);
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+}
 
+
+.btn btn-primary{
+    background-color: var(--btn-cor);
+}
