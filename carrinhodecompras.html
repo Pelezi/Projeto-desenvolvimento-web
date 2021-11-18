@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html data-theme='light'>
     <head>
         <meta charset="UTF-8" lang="pt-br">
         <title>Carrinho | iHortiFruti</title>
@@ -13,7 +13,7 @@
     <body>
 <!--CABEÇALHO-------------------------------------------------------------------------------------------------------->
       <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+        <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
@@ -40,9 +40,9 @@
                 </form>
                 <form class="d-flex">
                   <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
-                  <button class="btn btn-light me-2 text-nowrap" type="button" href="#">
+                  <button class="btn me-2 text-nowrap" style="background-color: var(--carbtn);" type="button" href="#">
                     <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
-                    Carrinho
+                    <p class="textCarrinho" style="display: inline-block;">Carrinho</p>
                   </button>
                 </form>
               </div>
@@ -56,21 +56,21 @@
 <!--PEDIDO NUMERO 1-------------------------------------------------------------------------------------------------->
             <div class="pedido1 my-2">
                 <div class="bananaimage">
-                    <input type="checkbox" id="pedido1" name="pedido1">
+                    <input type="checkbox" id="pedido1" onclick="isChecked()">
                     <label for="pedido1"><img src="Images/2banana-g2b2650cd3_1280N.jpg" alt="" width="100"></label>
                 </div>
                 <div class="produtobanana">
                     <p>Banana (Dúzia)</p>
-                    <h5>R$ 6,50</h5>
-                    <s>R$ 7,50</s> <!-- Sublinhado -->
+                    <h5>R$ 5,00</h5>
+                    <s>R$ 7,00</s> <!-- Sublinhado -->
                 </div>
                 <div class="trashbutton1">
                     <button type="submit"><i class="fas fa-trash-alt"></i></button>
                 </div>
                 <div class="selectquantidade1">
-                    <select class="form-control form-control-sm">
-                        <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
-                      </select>
+                  <button class="qtmenos1">-</button>
+                  <div class="qtitem1">1</div>
+                  <button class="qtmais1">+</button>
                 </div>
             </div>
 <!--PEDIDO NUMERO 2-------------------------------------------------------------------------------------------------->
@@ -81,19 +81,22 @@
                 </div>
                 <div class="produtoabacate">
                     <p>Abacate (Unidade)</p>
-                    <h5>R$ 6,50</h5>
-                    <s>R$ 8,00</s>
+                    <h5>R$ 3,00</h5>
+                    <s>R$ 5,00</s>
                 </div>
                 <div class="trashbutton2">
                     <button type="submit"><i class="fas fa-trash-alt"></i></button>
                 </div>
                 <div class="selectquantidade2">
-                    <select class="form-control form-control-sm">
-                        <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option>
-                      </select>
+                  <button class="qtmenos2">-</button>
+                  <div class="qtitem2">1</div>
+                  <button class="qtmais2">+</button>
+                    <!--<select class="form-control form-control-sm">
+                      <option id="option1" type="number">1</option> <option id="option2" type="number">2</option> <option id="option3" type="number">3</option> <option id="option4" type="number">4</option> <option id="option5" type="number">5</option> <option id="option6" type="number">6</option> <option id="option7" type="number">7</option> <option id="option8" type="number">8</option> <option id="option9" type="number">9</option> <option id="option10" type="number">10</option>
+                      </select> -->
                 </div>
             </div>
-        </div>
+        </div> 
 <!--RESUMO/FINALIZAÇÃO DO PEDIDO------------------------------------------------------------------------------------->
         <div class="conteiner resumo">
             <h2 style="text-align: left;">Resumo do Pedido </h2>
@@ -103,8 +106,8 @@
                     <li>Envio:</li>
                 </ul>
                 <ul class="direita">
-                    <li>R$00,00</li>
-                    <li>R$20,00</li>
+                    <li id="subtotalValor">R$0,00</li>
+                    <li type="number">R$5,00</li>
                 </ul>
             </div>
 <!--TOTAL DA COMPRA-------------------------------------------------------------------------------------------------->
@@ -113,7 +116,7 @@
                     <li><h2><b>Total:</b></h2></li>
                 </ul> 
                 <ul class="valortotal">
-                    <li><h2><b>R$00,00</b></h2></li>
+                    <li id="totalValor" type="number"><h2><b>R$00,00</b></h2></li>
                 </ul>               
             </div>
 <!--BOTÃO FINALIZAR COMPRA------------------------------------------------------------------------------------------->
@@ -134,7 +137,7 @@
 <!--INFORMAÇÕES DE PROTEÇÃO AO CONSUMIDOR---------------------------------------------------------------------------->
         <div class="protecaoaoconsumidor">
             <p><i class="fas fa-shield-alt"></i> <b>Proteção ao consumidor</b></p>
-            <p class="reembolso font-weight-light">Recupere o seu reembolso se seu pedido não for entregue ou de acordo com a descrição.</p>
+            <p class="reembolso">Recupere o seu reembolso se seu pedido não for entregue ou de acordo com a descrição.</p>
         </div>
       </div>
 <!--LEVE TAMBÉM!---------------------------------------------------------------------------->
@@ -144,8 +147,8 @@
       <button class="sugestao1">
         <div>
           <img src="Images/7abacaxi1.png" alt="" width="125px">
-          <p class="mb-4">Abacaxi (Unidade)</p>
             <div class="valoressugest1">
+              <p class="mb-4">Abacaxi (Unidade)</p>
               <h6><b>R$ 15,00</b></h6>
               <s>R$ 20,00</s>
             </div>
@@ -155,8 +158,8 @@
       <button class="sugestao2">
         <div>
           <img src="Images/8caju2.png" alt="" width="125px">
-          <p class="mb-4">Caju (Quilo)</p>
           <div class="valoressugest2">
+            <p class="mb-4">Caju (Quilo)</p>
             <h6><b>R$ 10,00</b></h6>
             <s>R$ 15,00</s>
           </div>  
@@ -166,8 +169,8 @@
       <button class="sugestao3">
         <div>
           <img src="images/9goiaba3.png" alt="" width="125px">
-          <p class="mb-4">Goiaba (Quilo)</p>
           <div class="valoressugest3">
+            <p class="mb-4">Goiaba (Quilo)</p>
             <h6><b>R$ 9,00</b></h6>
             <s>R$ 15,00</s>
         </div>
@@ -176,8 +179,8 @@
       <button class="sugestao4">
         <div>
           <img src="images/10morango4.png" alt="" width="125px">
-          <p class="mb-4">Morango (Quilo)</p>
           <div class="valoressugest4">
+            <p class="mb-4">Morango (Quilo)</p>
             <h6><b>R$16,00</b></h6>
             <s>R$ 20,50</s>
           </div>
@@ -187,7 +190,11 @@
 </div>
 <!--RODAPÉ----------------------------------------------------------------------------------------------------------->
       <div class="container-fluid px-0">
-        <footer class="py-3 mb-auto mt-5 bg-light">
+        <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
+        <label class="dot" for="checkboxdarkmode">
+          <img id="themeswitcher" onclick="themeswitch()" src="Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+        </label>
+        <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="produtos.html" class="nav-link px-2 text-muted">Produtos</a></li>
@@ -197,5 +204,9 @@
           <p class="text-center text-muted">© 2021 IHortiFruti, Inc <br><small>all rights reserved</small></p>
         </footer>
       </div>
+
+      <script src="carrinhodecompras.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
 </html>

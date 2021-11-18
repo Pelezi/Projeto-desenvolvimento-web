@@ -12,7 +12,7 @@
       <header>
         <nav id="navbartop" class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="Pagina inicial/index.html">
+              <a class="navbar-brand" href="index.html">
                 <img src="Images/logoiHortiFruti.png" alt="" width="100" height="100" class="d-inline-block align-text-center">
                 
               </a>
@@ -39,8 +39,8 @@
                   <a class="btn btn-danger me-2 text-nowrap" type="button" href="Cadastro.html" target="_blank" role="button">login / cadastro</a>
                 </form>
                 <form class="d-flex my-2">
-                  <a class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
-                    <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
+                  <a id="carrinho" class="btn btn-light me-2 text-nowrap" type="button" href="carrinhodecompras.html">
+                    <img id="cart" src="Images/shopping-cart.png" alt="" width="25px" height="25px">
                     Carrinho
                   </a>
                 </form>
@@ -176,9 +176,9 @@
       <div class="container-fluid px-0">
         <input type="checkbox" style="display: none;" id="checkboxdarkmode" />
         <label class="dot" for="checkboxdarkmode">
-          <img id="themeswitcher" onclick="themeswitch()" src="/Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
+          <img id="themeswitcher" onclick="themeswitch()" src="Images/NicePng_moon-png_60348.png" width="20px" height="20px" class="center" alt="">
         </label>
-        <footer id="footerbottom" class="py-3 mb-auto mt-5 bg-light">
+        <footer id="footerbottom" class="py-3 mb-auto mt-5 footer bg-light">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
             <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produtos</a></li>
