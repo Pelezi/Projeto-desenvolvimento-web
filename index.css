@@ -9,6 +9,8 @@ html[data-theme='light']{
     --text-color: black;
     --bg-card: white;
     --bg-roda: white;
+    --color-shadow: rgb(223, 223, 223);
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .5s ease-in-out, box-shadow .25s ease-in-out;
 }
 
 html[data-theme='dark']{
@@ -17,13 +19,18 @@ html[data-theme='dark']{
     --bg-card: gray;
     --bg-roda: black;
     --btn-cor:rgb(235, 78, 78);
+    --color-shadow: rgb(0, 0, 0);
+    --transitiontheme:color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-
+.navbar{
+    box-shadow: 0px 0px 10px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
 
 .row {
         display: flex;
@@ -33,6 +40,7 @@ html{
         flex-wrap: wrap;
         justify-content: space-around;
         background-image: var(--bg);
+        transition: var(--transitiontheme);
         
 }
 
@@ -40,11 +48,13 @@ html{
         flex-basis: 50%;
         min-width: 300px;
         color: var(--text-color);
+        transition: var(--transitiontheme);
 }
 
 .col-2 img{
         max-width: 100%;
         padding: 50px 0;
+        transition: var(--transitiontheme);
 }
 
 .col-2 h1{
@@ -52,6 +62,7 @@ html{
     line-height: 60px;
     margin: 25px 0;
     color: var(--text-color);
+    transition: var(--transitiontheme);
 }
 
 .btn-1{
@@ -62,18 +73,21 @@ html{
     margin: 30px 0;
     border-radius: 30px;
     text-decoration:none;
+    transition: var(--transitiontheme);
 }
 
 #MV{
     background-image: var(--bg);
     color: var(--text-color);
+    transition: var(--transitiontheme);
 }
 
 
 #MV h1{
     text-justify:auto;
     text-align: center;
-    color:var(--texto-color)
+    color:var(--texto-color);
+    transition: var(--transitiontheme);
 }
 
 .card {
@@ -82,41 +96,47 @@ html{
     text-align: center;
     color:var(--texto-color);
     background-color:var(--bg-card);
+    transition: var(--transitiontheme);
     
 }
 
 #Novidades{
     background-image: var(--bg);
-    color:var(--texto-color)
+    color:var(--texto-color);
+    transition: var(--transitiontheme);
 }
 
 #Novidades h1{
     text-align: center;
     color: var(--text-color);
+    transition: var(--transitiontheme);
 }
 
 #Blog{
     background-image: var(--bg);
     padding: 0%;
     margin: 0;
+    transition: var(--transitiontheme);
 }
 
 .mb-3{
     display: inline-flex;
     color: var(--text-color);
-
+    transition: var(--transitiontheme);
 }
 
 #Blog h1{
     text-align: center;
     padding: 30px;
     color: var(--text-color);
+    transition: var(--transitiontheme);
 }
 
 .Element{
     display:inline-flex;
     text-align: center;
     padding: 100px;
+    transition: var(--transitiontheme);
 }
 
 
@@ -137,24 +157,34 @@ html{
     border-radius: 50%;
     bottom: 20px;
     right: 20px;
+    box-shadow: 2px 2px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
+
 
 
 .btn btn-primary{
     background-color: var(--btn-cor);
+    transition: var(--transitiontheme);
 }
 
 .headerfooter{
     background-color: var(--bg-roda);
     text-align: center;
     display: block;
+    transition: var(--transitiontheme);
 }
 
 #footerbottom{
     text-align: center;
+    transition: var(--transitiontheme);
 }
 
 #btn-navbar{
     background-color:var(--bg-roda);
+    transition: var(--transitiontheme);
 }
     
+#carrinho{
+    color: var(--text-color);
+}
