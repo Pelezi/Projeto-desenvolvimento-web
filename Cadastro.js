@@ -34,3 +34,45 @@
       }
   }
 
+
+const fields = document.querySelectorAll("[required]")
+
+//console.log(fields)
+function customValidation(event){
+  const field = event.target
+  
+  //logica para verificar se existem erros
+  function verifyErrors(){
+    let foundError = false
+
+    for(error in field.validity) {
+      if(Error != "customError" && field.validity[Error]){ 
+          foundError = true
+      }
+      
+    }
+
+    return foundError;
+  }
+  
+  verifyErrors()
+
+  field.setCustomValidity("Esse campo é obrigatório")
+  
+  
+}
+
+for( field of fields) {
+  field.addEventListener("invalid" , customValidation)    
+}
+
+
+document.querySelector("form")
+.addEventListener("submit", event => {
+  console.log("enviar o formulário")
+
+
+  event.preventDefault()
+})
+
+
