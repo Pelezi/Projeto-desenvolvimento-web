@@ -8,6 +8,7 @@ html[data-theme='light']{
     --cartext: black;
     --carbtn: rgb(248, 249, 250);
     --reetext:  rgb(80, 80, 80);
+    --transitiontheme:color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out,box-shadow .25s ease-in-out
 }
 
 html[data-theme='dark']{
@@ -20,6 +21,7 @@ html[data-theme='dark']{
     --cartext: #bbb;
     --carbtn: rgb(53, 57, 61);
     --reetext: #bbb;
+    --transitiontheme:color .25s ease-in-out,background-color .25s ease-in-out,border-color .25s ease-in-out,box-shadow .25s ease-in-out
 }
 
 h1 {
@@ -52,6 +54,16 @@ body {
 
 .navbar{
     box-shadow: 0px 0px 10px var(--color-shadow);
+    transition: var(--transitiontheme);
+}
+
+.btn-light{
+    transition: var(--transitiontheme);
+}
+
+.btn-dark{
+    transition: var(--transitiontheme);
+
 }
 
 .meuspedidos{
@@ -75,6 +87,7 @@ body {
     font: sans-serif;
     margin-left: 150px;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .bananaimage{
@@ -106,6 +119,7 @@ body {
     padding: 8px;
     border-radius: 6px;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .abacateimage{
@@ -138,6 +152,7 @@ body {
     padding: 8px;
     border-radius: 6px;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .trashbutton1 button{
@@ -177,6 +192,11 @@ body {
     color: white;
 }
 
+.qtitem1{
+    height: 0px;
+    width: 12px;
+}
+
 .qtmais1{
     margin-left: 5px;
     font-family: serif;
@@ -203,6 +223,12 @@ body {
 
 .qtmenos2{
     margin-right: 5px;
+    
+}
+
+.qtitem2{
+    height: 0px;
+    width: 12px;
 }
 
 .qtmais2{
@@ -222,7 +248,7 @@ img{
     margin-bottom: 100px;
     left: 23.3cm;
     width: 330px;
-    height: 280px; /*277px*/
+    height: 277px; /*277px*/
     border: 1px solid transparent;
     border-radius: 6px;
     padding: 5px;
@@ -230,18 +256,36 @@ img{
     color: var(--text);
     font: sans-serif;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .listasresumo{
-    margin-bottom: 5px;
+    display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
     border: 1px solid transparent;
     border-radius: 6px;
     background-color: var(--bg-cards);
-    display: flex;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
+    text-align: right;
+}
+/*
+.subtotalValor{
+    height: 26px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(238, 130, 238, 0.151);
 }
 
+.envioValor{
+    height: 26px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(238, 130, 238, 0.151);
+}*/
 .listasresumo ul{
     list-style-type: none;
     margin: 0;
@@ -250,10 +294,11 @@ img{
 
 .listaresumo ul li{
     margin-top: 7px;
+    width: 50px;
 } 
 
 .totaltotal{
-    height: 60px;
+    height: 50px;
     margin-bottom: 23px;
     border: 1px solid transparent;
     border-radius: 6px;
@@ -261,6 +306,7 @@ img{
     justify-content: space-between;
     display: flex;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .totaltotal ul{
@@ -284,6 +330,7 @@ img{
     font: sans-serif;
     margin-left: 150px;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .formasdepagamento{
@@ -292,6 +339,7 @@ img{
     margin-top: 5px;
     width: 50%;
     text-align: center;
+    transition: var(--transitiontheme);
 }
     
 .formasdepagamento ul{
@@ -319,6 +367,7 @@ li {
 .reembolso{
     font-size: 10pt;
     color: var(--reetext);
+    transition: var(--transitiontheme);
 }
 
 .levetambem{
@@ -330,6 +379,7 @@ li {
     width: 700px;
     height: 300px;
     box-shadow: 1px 1px 4px var(--color-shadow);
+    transition: var(--transitiontheme);
 }
 
 .levetambem h6{
@@ -353,6 +403,7 @@ li {
     font: normal 10pt sans-serif;
     box-shadow: 1px 1px 4px var(--color-shadow);
     color: var(--text);
+    transition: var(--transitiontheme);
 }
 
 .sugestao1 s{
@@ -374,6 +425,7 @@ li {
     font: normal 10pt sans-serif;
     box-shadow: 1px 1px 4px var(--color-shadow);
     color: var(--text);
+    transition: var(--transitiontheme);
 }
 
 .sugestao2 s{
@@ -395,6 +447,7 @@ li {
     font: normal 10pt sans-serif;
     box-shadow: 1px 1px 4px var(--color-shadow);
     color: var(--text);
+    transition: var(--transitiontheme);
 }
 
 .sugestao3 s{
@@ -416,6 +469,7 @@ li {
     font: normal 10pt sans-serif;
     box-shadow: 1px 1px 4px var(--color-shadow);
     color: var(--text);
+    transition: var(--transitiontheme);
 }
 
 .sugestao4 s{
@@ -436,6 +490,7 @@ li {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
+    transition: var(--transitiontheme);
 }
 
 .center {

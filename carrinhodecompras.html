@@ -40,7 +40,7 @@
                 </form>
                 <form class="d-flex">
                   <a class="btn btn-danger me-2 text-nowrap" type="button" target="_blank" href="Cadastro.html">login / cadastro</a>
-                  <button class="btn me-2 text-nowrap" style="background-color: var(--carbtn);" type="button" href="#">
+                  <button class="btn me-2 text-nowrap" style="background-color: var(--bg-div);" type="button" href="#">
                     <img src="Images/shopping-cart.png" alt="" width="25px" height="25px">
                     <p class="textCarrinho" style="display: inline-block;">Carrinho</p>
                   </button>
@@ -56,8 +56,10 @@
 <!--PEDIDO NUMERO 1-------------------------------------------------------------------------------------------------->
             <div class="pedido1 my-2">
                 <div class="bananaimage">
-                    <input type="checkbox" id="pedido1" onclick="isChecked()">
-                    <label for="pedido1"><img src="Images/2banana-g2b2650cd3_1280N.jpg" alt="" width="100"></label>
+                    <input type="checkbox" onclick="calcheckBanana()" id="pedido1" name="pedido1">
+                    <label for="pedido1">
+                      <img src="Images/2banana-g2b2650cd3_1280N.jpg" alt="" width="100">
+                    </label>
                 </div>
                 <div class="produtobanana">
                     <p>Banana (Dúzia)</p>
@@ -67,16 +69,16 @@
                 <div class="trashbutton1">
                     <button type="submit"><i class="fas fa-trash-alt"></i></button>
                 </div>
-                <div class="selectquantidade1">
-                  <button class="qtmenos1">-</button>
-                  <div class="qtitem1">1</div>
-                  <button class="qtmais1">+</button>
+                <div class="selectquantidade2">
+                  <button onClick="DiminuiBanana();" class="qtmenos1">-</button>
+                  <p class="qtitem1" type='text' id="qtBanana" name="qtBanana">1</p>
+                  <button onClick="AumentaBanana();" class="qtmais1">+</button>
                 </div>
             </div>
 <!--PEDIDO NUMERO 2-------------------------------------------------------------------------------------------------->
             <div class="pedido2 my-2">
                 <div class="abacateimage">
-                    <input type="checkbox" id="pedido2" name="pedido2">
+                    <input type="checkbox" onclick="calcheckAbacate()" id="pedido2" name="pedido2">
                     <label for="pedido2"><img src="Images/1AbacateN.png" alt="" width="100"></label>
                 </div>
                 <div class="produtoabacate">
@@ -88,39 +90,43 @@
                     <button type="submit"><i class="fas fa-trash-alt"></i></button>
                 </div>
                 <div class="selectquantidade2">
-                  <button class="qtmenos2">-</button>
-                  <div class="qtitem2">1</div>
-                  <button class="qtmais2">+</button>
-                    <!--<select class="form-control form-control-sm">
-                      <option id="option1" type="number">1</option> <option id="option2" type="number">2</option> <option id="option3" type="number">3</option> <option id="option4" type="number">4</option> <option id="option5" type="number">5</option> <option id="option6" type="number">6</option> <option id="option7" type="number">7</option> <option id="option8" type="number">8</option> <option id="option9" type="number">9</option> <option id="option10" type="number">10</option>
-                      </select> -->
+                  <button onClick="DiminuiAbacate();" class="qtmenos2">-</button>
+                  <p class="qtitem2" type='text' id="qtAbacate" name="qtAbacate">1</p>
+                  <button onClick="AumentaAbacate();" class="qtmais2">+</button>
                 </div>
             </div>
         </div> 
 <!--RESUMO/FINALIZAÇÃO DO PEDIDO------------------------------------------------------------------------------------->
-        <div class="conteiner resumo">
+        <div class="resumo">
             <h2 style="text-align: left;">Resumo do Pedido </h2>
+            
             <div class="listasresumo">
+                <!--<ul class="esquerda" style="text-align: left;">
+                 <li>Subtotal:</li>
+                  <li>Envio:</li>
+                </ul>
+                <div class="subtotalValor">R$ --</div>
+                <div class="envioValor">R$ --</div>-->
                 <ul class="esquerda" style="text-align: left;">
                     <li>Subtotal:</li>
                     <li>Envio:</li>
                 </ul>
                 <ul class="direita">
-                    <li id="subtotalValor">R$0,00</li>
-                    <li type="number">R$5,00</li>
+                    <li ><p id="subtotalValor">R$ 0,00</p></li>
+                    <li id="envioValor">R$ 5,00</li> 
                 </ul>
             </div>
 <!--TOTAL DA COMPRA-------------------------------------------------------------------------------------------------->
-            <div class="totaltotal">
+            <div id="totaltotal" class="totaltotal">
                 <ul class="total">
                     <li><h2><b>Total:</b></h2></li>
                 </ul> 
                 <ul class="valortotal">
-                    <li id="totalValor" type="number"><h2><b>R$00,00</b></h2></li>
+                    <li id="totalValor" type="number"><h2><b>R$ 5,00</b></h2></li>
                 </ul>               
             </div>
 <!--BOTÃO FINALIZAR COMPRA------------------------------------------------------------------------------------------->
-            <button type="button" class="btnresumo btn-danger btn-lg">Comprar</button>
+          <button type="button" class="btnresumo btn-danger btn-lg">Comprar</button>
         </div>
       </div>
 <!--INFORMAÇÕES DE PAGAMENTO E PROTEÇÃO AO CONSUMIDOR---------------------------------------------------------------->
